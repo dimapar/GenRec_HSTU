@@ -165,3 +165,7 @@ logs/
 tmp/
 uv.lock
 ckpts
+/test.py
+.idea
+tools
+output
