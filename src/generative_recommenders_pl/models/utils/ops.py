@@ -34,7 +34,10 @@ def asynchronous_complete_cumsum(lengths: torch.Tensor) -> torch.Tensor:
             )
 
         return torch.cat(
-            (torch.tensor([0], dtype=lengths.dtype), torch.cumsum(lengths, dim=0))
+            (
+                torch.tensor([0], dtype=lengths.dtype, device=lengths.device),
+                torch.cumsum(lengths, dim=0),
+            )
         )
 
 
@@ -59,7 +62,7 @@ def dense_to_jagged(dense_tensor: torch.Tensor, offsets: torch.Tensor) -> torch.
 
         jagged_tensors = []
         for i in range(offsets.size(0) - 1):
-            length = offsets[i + 1] - offsets[i]
+            length = int((offsets[i + 1] - offsets[i]).item())
             jagged_tensors.append(dense_tensor[i, :length])
         return torch.cat(jagged_tensors, dim=0)
 
@@ -102,13 +105,16 @@ def jagged_to_padded_dense(
 
         # Initialize the padded tensor
         padded_tensor = torch.full(
-            (num_sequences, max_lengths, *sequences_shape), padding_value
+            (num_sequences, max_lengths, *sequences_shape),
+            padding_value,
+            dtype=values.dtype,
+            device=values.device,
         )
 
         # Fill in the padded tensor with values from the jagged tensors
         for i in range(num_sequences):
-            start = offsets[i]
-            end = offsets[i + 1]
+            start = int(offsets[i].item())
+            end = int(offsets[i + 1].item())
             length = end - start
             padded_tensor[i, :length] = values[start:end]
         return padded_tensor
