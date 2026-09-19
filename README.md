@@ -139,18 +139,6 @@ python src\generative_recommenders_pl\scripts\plot_robustness.py
 
 Скрипт автоматически читает стандартный CSV и сохраняет графики, сводные таблицы и HTML-отчет в `outputs/robustness/plots/`.
 
-### 6. Пересобрать PDF-заметку
-
-Текст заметки редактируется в `outputs/robustness/robustness_note.md`. После изменения Markdown PDF можно пересобрать одной командой:
-
-```powershell
-python src\generative_recommenders_pl\scripts\generate_note_pdf.py
-```
-
-Скрипт сохраняет готовый файл в `outputs/robustness/robustness_note.pdf`. График строится по актуальной сводке `outputs/robustness/plots/robustness_summary_by_position.csv`, поэтому после нового robustness-эксперимента сначала нужно выполнить шаг 5.
-
-Перед запуском нужно закрыть `robustness_note.pdf` в браузере или просмотрщике: Windows не позволяет перезаписать открытый PDF.
-
 ## Результаты
 
 Для обученного checkpoint получены baseline-значения.
