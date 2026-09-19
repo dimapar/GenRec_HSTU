@@ -161,7 +161,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .DS_Store
-logs/
 tmp/
 uv.lock
 ckpts
@@ -169,3 +168,4 @@ ckpts
 .idea
 tools
 output
+/src/generative_recommenders_pl/scripts/generate_note_pdf.py

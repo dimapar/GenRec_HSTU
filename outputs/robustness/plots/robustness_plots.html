@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robustness plots</title>
+  <style>
+    body {
+      margin: 32px;
+      font-family: Segoe UI, Arial, sans-serif;
+      color: #111827;
+      background: #f8fafc;
+    }
+    main {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 24px;
+    }
+    .table-block {
+      margin: 0 0 28px;
+      padding: 18px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+    }
+    .table-wrap {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #e2e8f0;
+      text-align: left;
+      white-space: nowrap;
+    }
+    th {
+      color: #334155;
+      background: #f8fafc;
+      font-weight: 600;
+    }
+    th.num, td.num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
+    td.strong {
+      font-weight: 600;
+    }
+    .figure {
+      margin: 0 0 28px;
+      padding: 18px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0 0 10px;
+      text-transform: capitalize;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Robustness plots</h1>
+    <section class="table-block">
+<h2>Exact means by perturbation position</h2>
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th>Perturbation</th><th>Position</th><th class="num">n</th><th class="num">Top-10 overlap</th><th class="num">Jaccard</th><th class="num">JS x1000</th><th class="num">Top-1 changed</th><th class="num">Target@10 after</th>
+</tr></thead>
+<tbody>
+<tr><td>delete</td><td>first</td><td class="num">500</td><td class="num strong">0.873</td><td class="num">0.793</td><td class="num">0.124</td><td class="num">21.4%</td><td class="num">30.2%</td></tr>
+<tr><td>delete</td><td>25%</td><td class="num">500</td><td class="num strong">0.877</td><td class="num">0.797</td><td class="num">0.127</td><td class="num">21.4%</td><td class="num">30.6%</td></tr>
+<tr><td>delete</td><td>50%</td><td class="num">500</td><td class="num strong">0.877</td><td class="num">0.797</td><td class="num">0.129</td><td class="num">22.8%</td><td class="num">30.4%</td></tr>
+<tr><td>delete</td><td>75%</td><td class="num">500</td><td class="num strong">0.873</td><td class="num">0.791</td><td class="num">0.133</td><td class="num">22.4%</td><td class="num">31.0%</td></tr>
+<tr><td>delete</td><td>last</td><td class="num">500</td><td class="num strong">0.511</td><td class="num">0.380</td><td class="num">0.361</td><td class="num">73.6%</td><td class="num">24.0%</td></tr>
+<tr><td>replace random</td><td>first</td><td class="num">2500</td><td class="num strong">0.951</td><td class="num">0.913</td><td class="num">0.202</td><td class="num">6.5%</td><td class="num">30.5%</td></tr>
+<tr><td>replace random</td><td>25%</td><td class="num">2500</td><td class="num strong">0.968</td><td class="num">0.943</td><td class="num">0.206</td><td class="num">4.8%</td><td class="num">30.3%</td></tr>
+<tr><td>replace random</td><td>50%</td><td class="num">2500</td><td class="num strong">0.963</td><td class="num">0.934</td><td class="num">0.208</td><td class="num">6.0%</td><td class="num">30.0%</td></tr>
+<tr><td>replace random</td><td>75%</td><td class="num">2500</td><td class="num strong">0.951</td><td class="num">0.913</td><td class="num">0.216</td><td class="num">8.4%</td><td class="num">30.5%</td></tr>
+<tr><td>replace random</td><td>last</td><td class="num">2500</td><td class="num strong">0.249</td><td class="num">0.166</td><td class="num">1.667</td><td class="num">89.2%</td><td class="num">12.8%</td></tr>
+</tbody>
+</table>
+</div>
+</section><section class="table-block">
+<h2>Exact means by history length</h2>
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th>Perturbation</th><th>History length</th><th class="num">n</th><th class="num">Top-10 overlap</th><th class="num">Jaccard</th><th class="num">JS x1000</th><th class="num">Top-1 changed</th><th class="num">Target@10 after</th>
+</tr></thead>
+<tbody>
+<tr><td>delete</td><td>19-35</td><td class="num">500</td><td class="num strong">0.842</td><td class="num">0.763</td><td class="num">0.169</td><td class="num">26.6%</td><td class="num">37.2%</td></tr>
+<tr><td>delete</td><td>35-63</td><td class="num">500</td><td class="num strong">0.830</td><td class="num">0.754</td><td class="num">0.182</td><td class="num">26.6%</td><td class="num">31.4%</td></tr>
+<tr><td>delete</td><td>63-107</td><td class="num">500</td><td class="num strong">0.823</td><td class="num">0.731</td><td class="num">0.162</td><td class="num">29.4%</td><td class="num">33.0%</td></tr>
+<tr><td>delete</td><td>107-200</td><td class="num">500</td><td class="num strong">0.788</td><td class="num">0.692</td><td class="num">0.175</td><td class="num">30.4%</td><td class="num">21.0%</td></tr>
+<tr><td>delete</td><td>200-200</td><td class="num">500</td><td class="num strong">0.729</td><td class="num">0.617</td><td class="num">0.185</td><td class="num">48.6%</td><td class="num">23.6%</td></tr>
+<tr><td>replace random</td><td>19-35</td><td class="num">2500</td><td class="num strong">0.797</td><td class="num">0.741</td><td class="num">0.524</td><td class="num">25.9%</td><td class="num">34.8%</td></tr>
+<tr><td>replace random</td><td>35-63</td><td class="num">2500</td><td class="num strong">0.812</td><td class="num">0.768</td><td class="num">0.508</td><td class="num">23.3%</td><td class="num">28.8%</td></tr>
+<tr><td>replace random</td><td>63-107</td><td class="num">2500</td><td class="num strong">0.827</td><td class="num">0.788</td><td class="num">0.545</td><td class="num">21.2%</td><td class="num">29.6%</td></tr>
+<tr><td>replace random</td><td>107-200</td><td class="num">2500</td><td class="num strong">0.821</td><td class="num">0.787</td><td class="num">0.508</td><td class="num">22.0%</td><td class="num">18.5%</td></tr>
+<tr><td>replace random</td><td>200-200</td><td class="num">2500</td><td class="num strong">0.824</td><td class="num">0.786</td><td class="num">0.414</td><td class="num">22.5%</td><td class="num">22.4%</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+    <section class="figure">
+<h2>mean topk overlap by position</h2>
+<img src="mean_topk_overlap_by_position.svg" alt="mean topk overlap by position">
+</section><section class="figure">
+<h2>mean js divergence by position</h2>
+<img src="mean_js_divergence_by_position.svg" alt="mean js divergence by position">
+</section><section class="figure">
+<h2>Top-10 overlap boxplot by perturbation position</h2>
+<img src="topk_overlap_boxplot_by_position.svg" alt="Top-10 overlap boxplot by perturbation position">
+</section><section class="figure">
+<h2>Distribution of retained Top-10 items by perturbation position</h2>
+<img src="topk_overlap_distribution_by_position.svg" alt="Distribution of retained Top-10 items by perturbation position">
+</section><section class="figure">
+<h2>mean topk overlap by history length</h2>
+<img src="mean_topk_overlap_by_history_length.svg" alt="mean topk overlap by history length">
+</section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="590" viewBox="0 0 1120 590" role="img">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="560" y="28" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Distribution of retained top-10 items by perturbation position</text>
+<text x="560" y="51" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#475569">Each cell shows the percentage of experiments</text>
+<text x="305.00" y="78" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#2563eb">delete</text>
+<text x="88" y="115.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">10</text>
+<rect x="100.00" y="94.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2480" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 10 retained: 24.8% (124/500)</title></rect>
+<text x="141.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">24.8%</text>
+<rect x="182.00" y="94.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2580" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 10 retained: 25.8% (129/500)</title></rect>
+<text x="223.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">25.8%</text>
+<rect x="264.00" y="94.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2560" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 10 retained: 25.6% (128/500)</title></rect>
+<text x="305.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">25.6%</text>
+<rect x="346.00" y="94.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2460" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 10 retained: 24.6% (123/500)</title></rect>
+<text x="387.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">24.6%</text>
+<rect x="428.00" y="94.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 10 retained: 0.2% (1/500)</title></rect>
+<text x="469.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<text x="88" y="149.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">9</text>
+<rect x="100.00" y="128.00" width="82" height="34" fill="#2563eb" fill-opacity="0.4440" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 9 retained: 44.4% (222/500)</title></rect>
+<text x="141.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">44.4%</text>
+<rect x="182.00" y="128.00" width="82" height="34" fill="#2563eb" fill-opacity="0.4300" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 9 retained: 43.0% (215/500)</title></rect>
+<text x="223.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">43.0%</text>
+<rect x="264.00" y="128.00" width="82" height="34" fill="#2563eb" fill-opacity="0.4300" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 9 retained: 43.0% (215/500)</title></rect>
+<text x="305.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">43.0%</text>
+<rect x="346.00" y="128.00" width="82" height="34" fill="#2563eb" fill-opacity="0.4300" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 9 retained: 43.0% (215/500)</title></rect>
+<text x="387.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">43.0%</text>
+<rect x="428.00" y="128.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 9 retained: 5.6% (28/500)</title></rect>
+<text x="469.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">5.6%</text>
+<text x="88" y="183.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">8</text>
+<rect x="100.00" y="162.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1900" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 8 retained: 19.0% (95/500)</title></rect>
+<text x="141.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">19.0%</text>
+<rect x="182.00" y="162.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2080" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 8 retained: 20.8% (104/500)</title></rect>
+<text x="223.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">20.8%</text>
+<rect x="264.00" y="162.00" width="82" height="34" fill="#2563eb" fill-opacity="0.2120" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 8 retained: 21.2% (106/500)</title></rect>
+<text x="305.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">21.2%</text>
+<rect x="346.00" y="162.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1960" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 8 retained: 19.6% (98/500)</title></rect>
+<text x="387.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">19.6%</text>
+<rect x="428.00" y="162.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1220" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 8 retained: 12.2% (61/500)</title></rect>
+<text x="469.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">12.2%</text>
+<text x="88" y="217.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">7</text>
+<rect x="100.00" y="196.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 7 retained: 6.6% (33/500)</title></rect>
+<text x="141.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.6%</text>
+<rect x="182.00" y="196.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 7 retained: 6.0% (30/500)</title></rect>
+<text x="223.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.0%</text>
+<rect x="264.00" y="196.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 7 retained: 6.6% (33/500)</title></rect>
+<text x="305.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.6%</text>
+<rect x="346.00" y="196.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0860" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 7 retained: 8.6% (43/500)</title></rect>
+<text x="387.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">8.6%</text>
+<rect x="428.00" y="196.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1500" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 7 retained: 15.0% (75/500)</title></rect>
+<text x="469.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">15.0%</text>
+<text x="88" y="251.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">6</text>
+<rect x="100.00" y="230.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 6 retained: 3.0% (15/500)</title></rect>
+<text x="141.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">3.0%</text>
+<rect x="182.00" y="230.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 6 retained: 2.4% (12/500)</title></rect>
+<text x="223.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">2.4%</text>
+<rect x="264.00" y="230.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 6 retained: 1.4% (7/500)</title></rect>
+<text x="305.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.4%</text>
+<rect x="346.00" y="230.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 6 retained: 2.4% (12/500)</title></rect>
+<text x="387.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">2.4%</text>
+<rect x="428.00" y="230.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1680" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 6 retained: 16.8% (84/500)</title></rect>
+<text x="469.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">16.8%</text>
+<text x="88" y="285.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">5</text>
+<rect x="100.00" y="264.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 5 retained: 1.0% (5/500)</title></rect>
+<text x="141.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.0%</text>
+<rect x="182.00" y="264.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 5 retained: 1.4% (7/500)</title></rect>
+<text x="223.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.4%</text>
+<rect x="264.00" y="264.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 5 retained: 1.6% (8/500)</title></rect>
+<text x="305.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.6%</text>
+<rect x="346.00" y="264.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 5 retained: 1.6% (8/500)</title></rect>
+<text x="387.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.6%</text>
+<rect x="428.00" y="264.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1420" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 5 retained: 14.2% (71/500)</title></rect>
+<text x="469.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">14.2%</text>
+<text x="88" y="319.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">4</text>
+<rect x="100.00" y="298.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 4 retained: 1.0% (5/500)</title></rect>
+<text x="141.00" y="319.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.0%</text>
+<rect x="182.00" y="298.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 4 retained: 0.4% (2/500)</title></rect>
+<text x="223.00" y="319.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.4%</text>
+<rect x="264.00" y="298.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 4 retained: 0.4% (2/500)</title></rect>
+<text x="305.00" y="319.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.4%</text>
+<rect x="346.00" y="298.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 4 retained: 0.0% (0/500)</title></rect>
+<rect x="428.00" y="298.00" width="82" height="34" fill="#2563eb" fill-opacity="0.1040" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 4 retained: 10.4% (52/500)</title></rect>
+<text x="469.00" y="319.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">10.4%</text>
+<text x="88" y="353.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">3</text>
+<rect x="100.00" y="332.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 3 retained: 0.2% (1/500)</title></rect>
+<text x="141.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="182.00" y="332.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 3 retained: 0.2% (1/500)</title></rect>
+<text x="223.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="264.00" y="332.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 3 retained: 0.2% (1/500)</title></rect>
+<text x="305.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="346.00" y="332.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 3 retained: 0.2% (1/500)</title></rect>
+<text x="387.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="428.00" y="332.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 3 retained: 7.0% (35/500)</title></rect>
+<text x="469.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">7.0%</text>
+<text x="88" y="387.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">2</text>
+<rect x="100.00" y="366.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 2 retained: 0.0% (0/500)</title></rect>
+<rect x="182.00" y="366.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 2 retained: 0.0% (0/500)</title></rect>
+<rect x="264.00" y="366.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 2 retained: 0.0% (0/500)</title></rect>
+<rect x="346.00" y="366.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 2 retained: 0.0% (0/500)</title></rect>
+<rect x="428.00" y="366.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 2 retained: 7.6% (38/500)</title></rect>
+<text x="469.00" y="387.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">7.6%</text>
+<text x="88" y="421.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">1</text>
+<rect x="100.00" y="400.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 1 retained: 0.0% (0/500)</title></rect>
+<rect x="182.00" y="400.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 1 retained: 0.0% (0/500)</title></rect>
+<rect x="264.00" y="400.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 1 retained: 0.0% (0/500)</title></rect>
+<rect x="346.00" y="400.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 1 retained: 0.0% (0/500)</title></rect>
+<rect x="428.00" y="400.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 1 retained: 6.6% (33/500)</title></rect>
+<text x="469.00" y="421.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.6%</text>
+<text x="88" y="455.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0</text>
+<rect x="100.00" y="434.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, first, 0 retained: 0.0% (0/500)</title></rect>
+<rect x="182.00" y="434.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 25%, 0 retained: 0.0% (0/500)</title></rect>
+<rect x="264.00" y="434.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 50%, 0 retained: 0.0% (0/500)</title></rect>
+<rect x="346.00" y="434.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>delete, 75%, 0 retained: 0.0% (0/500)</title></rect>
+<rect x="428.00" y="434.00" width="82" height="34" fill="#2563eb" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>delete, last, 0 retained: 4.4% (22/500)</title></rect>
+<text x="469.00" y="455.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">4.4%</text>
+<text x="141.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">first</text>
+<text x="223.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">25%</text>
+<text x="305.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">50%</text>
+<text x="387.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">75%</text>
+<text x="469.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">last</text>
+<text x="305.00" y="513" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">position in the user history</text>
+<text x="825.00" y="78" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#d97706">replace random</text>
+<text x="608" y="115.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">10</text>
+<rect x="620.00" y="94.00" width="82" height="34" fill="#d97706" fill-opacity="0.5936" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 10 retained: 59.4% (1484/2500)</title></rect>
+<text x="661.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff">59.4%</text>
+<rect x="702.00" y="94.00" width="82" height="34" fill="#d97706" fill-opacity="0.7136" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 10 retained: 71.4% (1784/2500)</title></rect>
+<text x="743.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff">71.4%</text>
+<rect x="784.00" y="94.00" width="82" height="34" fill="#d97706" fill-opacity="0.6700" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 10 retained: 67.0% (1675/2500)</title></rect>
+<text x="825.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff">67.0%</text>
+<rect x="866.00" y="94.00" width="82" height="34" fill="#d97706" fill-opacity="0.5968" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 10 retained: 59.7% (1492/2500)</title></rect>
+<text x="907.00" y="115.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#ffffff">59.7%</text>
+<rect x="948.00" y="94.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 10 retained: 0.0% (0/2500)</title></rect>
+<text x="608" y="149.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">9</text>
+<rect x="620.00" y="128.00" width="82" height="34" fill="#d97706" fill-opacity="0.3312" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 9 retained: 33.1% (828/2500)</title></rect>
+<text x="661.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">33.1%</text>
+<rect x="702.00" y="128.00" width="82" height="34" fill="#d97706" fill-opacity="0.2572" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 9 retained: 25.7% (643/2500)</title></rect>
+<text x="743.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">25.7%</text>
+<rect x="784.00" y="128.00" width="82" height="34" fill="#d97706" fill-opacity="0.2964" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 9 retained: 29.6% (741/2500)</title></rect>
+<text x="825.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">29.6%</text>
+<rect x="866.00" y="128.00" width="82" height="34" fill="#d97706" fill-opacity="0.3280" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 9 retained: 32.8% (820/2500)</title></rect>
+<text x="907.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">32.8%</text>
+<rect x="948.00" y="128.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 9 retained: 0.6% (16/2500)</title></rect>
+<text x="989.00" y="149.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.6%</text>
+<text x="608" y="183.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">8</text>
+<rect x="620.00" y="162.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 8 retained: 6.5% (163/2500)</title></rect>
+<text x="661.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.5%</text>
+<rect x="702.00" y="162.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 8 retained: 2.5% (63/2500)</title></rect>
+<text x="743.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">2.5%</text>
+<rect x="784.00" y="162.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 8 retained: 2.8% (70/2500)</title></rect>
+<text x="825.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">2.8%</text>
+<rect x="866.00" y="162.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 8 retained: 6.3% (158/2500)</title></rect>
+<text x="907.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.3%</text>
+<rect x="948.00" y="162.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 8 retained: 1.7% (43/2500)</title></rect>
+<text x="989.00" y="183.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">1.7%</text>
+<text x="608" y="217.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">7</text>
+<rect x="620.00" y="196.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 7 retained: 0.7% (18/2500)</title></rect>
+<text x="661.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.7%</text>
+<rect x="702.00" y="196.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 7 retained: 0.4% (9/2500)</title></rect>
+<text x="743.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.4%</text>
+<rect x="784.00" y="196.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 7 retained: 0.4% (10/2500)</title></rect>
+<text x="825.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.4%</text>
+<rect x="866.00" y="196.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 7 retained: 0.9% (22/2500)</title></rect>
+<text x="907.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.9%</text>
+<rect x="948.00" y="196.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 7 retained: 5.0% (126/2500)</title></rect>
+<text x="989.00" y="217.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">5.0%</text>
+<text x="608" y="251.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">6</text>
+<rect x="620.00" y="230.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 6 retained: 0.2% (6/2500)</title></rect>
+<text x="661.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="702.00" y="230.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 6 retained: 0.0% (1/2500)</title></rect>
+<text x="743.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">&lt;0.1%</text>
+<rect x="784.00" y="230.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 6 retained: 0.2% (4/2500)</title></rect>
+<text x="825.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="866.00" y="230.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 6 retained: 0.2% (6/2500)</title></rect>
+<text x="907.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.2%</text>
+<rect x="948.00" y="230.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 6 retained: 6.2% (156/2500)</title></rect>
+<text x="989.00" y="251.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">6.2%</text>
+<text x="608" y="285.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">5</text>
+<rect x="620.00" y="264.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 5 retained: 0.0% (1/2500)</title></rect>
+<text x="661.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">&lt;0.1%</text>
+<rect x="702.00" y="264.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 5 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="264.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 5 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="264.00" width="82" height="34" fill="#d97706" fill-opacity="0.0800" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 5 retained: 0.1% (2/2500)</title></rect>
+<text x="907.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">0.1%</text>
+<rect x="948.00" y="264.00" width="82" height="34" fill="#d97706" fill-opacity="0.0912" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 5 retained: 9.1% (228/2500)</title></rect>
+<text x="989.00" y="285.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">9.1%</text>
+<text x="608" y="319.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">4</text>
+<rect x="620.00" y="298.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 4 retained: 0.0% (0/2500)</title></rect>
+<rect x="702.00" y="298.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 4 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="298.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 4 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="298.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 4 retained: 0.0% (0/2500)</title></rect>
+<rect x="948.00" y="298.00" width="82" height="34" fill="#d97706" fill-opacity="0.1044" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 4 retained: 10.4% (261/2500)</title></rect>
+<text x="989.00" y="319.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">10.4%</text>
+<text x="608" y="353.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">3</text>
+<rect x="620.00" y="332.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 3 retained: 0.0% (0/2500)</title></rect>
+<rect x="702.00" y="332.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 3 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="332.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 3 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="332.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 3 retained: 0.0% (0/2500)</title></rect>
+<rect x="948.00" y="332.00" width="82" height="34" fill="#d97706" fill-opacity="0.1068" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 3 retained: 10.7% (267/2500)</title></rect>
+<text x="989.00" y="353.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">10.7%</text>
+<text x="608" y="387.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">2</text>
+<rect x="620.00" y="366.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 2 retained: 0.0% (0/2500)</title></rect>
+<rect x="702.00" y="366.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 2 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="366.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 2 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="366.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 2 retained: 0.0% (0/2500)</title></rect>
+<rect x="948.00" y="366.00" width="82" height="34" fill="#d97706" fill-opacity="0.1176" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 2 retained: 11.8% (294/2500)</title></rect>
+<text x="989.00" y="387.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">11.8%</text>
+<text x="608" y="421.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">1</text>
+<rect x="620.00" y="400.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 1 retained: 0.0% (0/2500)</title></rect>
+<rect x="702.00" y="400.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 1 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="400.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 1 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="400.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 1 retained: 0.0% (0/2500)</title></rect>
+<rect x="948.00" y="400.00" width="82" height="34" fill="#d97706" fill-opacity="0.1412" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 1 retained: 14.1% (353/2500)</title></rect>
+<text x="989.00" y="421.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">14.1%</text>
+<text x="608" y="455.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0</text>
+<rect x="620.00" y="434.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, first, 0 retained: 0.0% (0/2500)</title></rect>
+<rect x="702.00" y="434.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 25%, 0 retained: 0.0% (0/2500)</title></rect>
+<rect x="784.00" y="434.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 50%, 0 retained: 0.0% (0/2500)</title></rect>
+<rect x="866.00" y="434.00" width="82" height="34" fill="#d97706" fill-opacity="0.0000" stroke="#cbd5e1" stroke-width="1"><title>replace random, 75%, 0 retained: 0.0% (0/2500)</title></rect>
+<rect x="948.00" y="434.00" width="82" height="34" fill="#d97706" fill-opacity="0.3024" stroke="#cbd5e1" stroke-width="1"><title>replace random, last, 0 retained: 30.2% (756/2500)</title></rect>
+<text x="989.00" y="455.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">30.2%</text>
+<text x="661.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">first</text>
+<text x="743.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">25%</text>
+<text x="825.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">50%</text>
+<text x="907.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">75%</text>
+<text x="989.00" y="488" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">last</text>
+<text x="825.00" y="513" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">position in the user history</text>
+<text x="24" y="281.00" text-anchor="middle" transform="rotate(-90 24 281.00)" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">retained recommendations (out of 10)</text>
+</svg>

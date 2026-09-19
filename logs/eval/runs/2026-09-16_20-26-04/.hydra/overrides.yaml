@@ -1,0 +1,5 @@
+- ckpt_path=C:\Users\dimap\Desktop\GenRec_HSTU\logs\train\runs\2026-09-16_17-02-25\checkpoints\epoch_097.ckpt
+- +num_users=500
+- +replacement_repeats=5
+- +top_k=10
+- +output_file=outputs\robustness\ml1m_hstu_robustness.csv

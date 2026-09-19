@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620" role="img">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="560" y="28" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="600" fill="#0f172a">Top-10 overlap distribution by perturbation position</text>
+<rect x="135" y="44" width="28" height="16" fill="#64748b" fill-opacity="0.20" stroke="#475569" stroke-width="1.5"/>
+<line x1="135" x2="163" y1="52" y2="52" stroke="#475569" stroke-width="2.3"/>
+<text x="174" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">Q1-Q3; line = median</text>
+<line x1="442" x2="442" y1="43" y2="61" stroke="#475569" stroke-width="1.5"/>
+<line x1="434" x2="450" y1="43" y2="43" stroke="#475569" stroke-width="1.5"/>
+<line x1="434" x2="450" y1="61" y2="61" stroke="#475569" stroke-width="1.5"/>
+<text x="460" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">whiskers = 1.5 IQR</text>
+<polygon points="680,46 686,52 680,58 674,52" fill="#ffffff" stroke="#475569" stroke-width="1.7"/>
+<text x="696" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">mean</text>
+<circle cx="787" cy="52" r="3.5" fill="#ffffff" stroke="#475569" stroke-width="1.4"/>
+<text x="800" y="56" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">outlier level</text>
+<text x="295.00" y="82" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#2563eb">delete</text>
+<line x1="90" x2="500" y1="514.00" y2="514.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="518.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.0</text>
+<line x1="90" x2="500" y1="473.00" y2="473.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="477.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.1</text>
+<line x1="90" x2="500" y1="432.00" y2="432.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="436.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.2</text>
+<line x1="90" x2="500" y1="391.00" y2="391.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="395.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.3</text>
+<line x1="90" x2="500" y1="350.00" y2="350.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="354.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.4</text>
+<line x1="90" x2="500" y1="309.00" y2="309.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="313.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.5</text>
+<line x1="90" x2="500" y1="268.00" y2="268.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="272.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.6</text>
+<line x1="90" x2="500" y1="227.00" y2="227.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="231.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.7</text>
+<line x1="90" x2="500" y1="186.00" y2="186.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="190.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.8</text>
+<line x1="90" x2="500" y1="145.00" y2="145.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="149.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.9</text>
+<line x1="90" x2="500" y1="104.00" y2="104.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="80" y="108.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">1.0</text>
+<rect x="90" y="104" width="410" height="410" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<text x="131.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">first</text>
+<line x1="131.00" x2="131.00" y1="104.00" y2="227.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="119.00" x2="143.00" y1="104.00" y2="104.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="119.00" x2="143.00" y1="227.00" y2="227.00" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="108.00" y="145.00" width="46" height="41.00" fill="#2563eb" fill-opacity="0.22" stroke="#2563eb" stroke-width="1.8"><title>delete, first: Q1=0.80, median=0.90, Q3=0.90, mean=0.873, n=500</title></rect>
+<line x1="108.00" x2="154.00" y1="145.00" y2="145.00" stroke="#2563eb" stroke-width="2.6"/>
+<polygon points="131.00,150.91 136.00,155.91 131.00,160.91 126.00,155.91" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"><title>mean=0.873</title></polygon>
+<circle cx="123.00" cy="391.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.3: 1 observations</title></circle>
+<circle cx="139.00" cy="350.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.4: 5 observations</title></circle>
+<circle cx="123.00" cy="309.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.5: 5 observations</title></circle>
+<circle cx="139.00" cy="268.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.6: 15 observations</title></circle>
+<text x="131.00" y="137.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.90</text>
+<text x="213.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">25%</text>
+<line x1="213.00" x2="213.00" y1="104.00" y2="268.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="201.00" x2="225.00" y1="104.00" y2="104.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="201.00" x2="225.00" y1="268.00" y2="268.00" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="190.00" y="104.00" width="46" height="82.00" fill="#2563eb" fill-opacity="0.22" stroke="#2563eb" stroke-width="1.8"><title>delete, 25%: Q1=0.80, median=0.90, Q3=1.00, mean=0.877, n=500</title></rect>
+<line x1="190.00" x2="236.00" y1="145.00" y2="145.00" stroke="#2563eb" stroke-width="2.6"/>
+<polygon points="213.00,149.43 218.00,154.43 213.00,159.43 208.00,154.43" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"><title>mean=0.877</title></polygon>
+<circle cx="205.00" cy="391.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.3: 1 observations</title></circle>
+<circle cx="221.00" cy="350.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.4: 2 observations</title></circle>
+<circle cx="205.00" cy="309.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.5: 7 observations</title></circle>
+<text x="213.00" y="137.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.90</text>
+<text x="295.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">50%</text>
+<line x1="295.00" x2="295.00" y1="104.00" y2="268.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="283.00" x2="307.00" y1="104.00" y2="104.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="283.00" x2="307.00" y1="268.00" y2="268.00" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="272.00" y="104.00" width="46" height="82.00" fill="#2563eb" fill-opacity="0.22" stroke="#2563eb" stroke-width="1.8"><title>delete, 50%: Q1=0.80, median=0.90, Q3=1.00, mean=0.877, n=500</title></rect>
+<line x1="272.00" x2="318.00" y1="145.00" y2="145.00" stroke="#2563eb" stroke-width="2.6"/>
+<polygon points="295.00,149.27 300.00,154.27 295.00,159.27 290.00,154.27" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"><title>mean=0.877</title></polygon>
+<circle cx="287.00" cy="391.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.3: 1 observations</title></circle>
+<circle cx="303.00" cy="350.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.4: 2 observations</title></circle>
+<circle cx="287.00" cy="309.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.5: 8 observations</title></circle>
+<text x="295.00" y="137.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.90</text>
+<text x="377.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">75%</text>
+<line x1="377.00" x2="377.00" y1="104.00" y2="227.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="365.00" x2="389.00" y1="104.00" y2="104.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="365.00" x2="389.00" y1="227.00" y2="227.00" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="354.00" y="145.00" width="46" height="41.00" fill="#2563eb" fill-opacity="0.22" stroke="#2563eb" stroke-width="1.8"><title>delete, 75%: Q1=0.80, median=0.90, Q3=0.90, mean=0.873, n=500</title></rect>
+<line x1="354.00" x2="400.00" y1="145.00" y2="145.00" stroke="#2563eb" stroke-width="2.6"/>
+<polygon points="377.00,151.07 382.00,156.07 377.00,161.07 372.00,156.07" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"><title>mean=0.873</title></polygon>
+<circle cx="369.00" cy="391.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.3: 1 observations</title></circle>
+<circle cx="385.00" cy="309.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.5: 8 observations</title></circle>
+<circle cx="369.00" cy="268.00" r="3" fill="#ffffff" stroke="#2563eb" stroke-width="1.3"><title>outlier 0.6: 12 observations</title></circle>
+<text x="377.00" y="137.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.90</text>
+<text x="459.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">last</text>
+<line x1="459.00" x2="459.00" y1="104.00" y2="514.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="447.00" x2="471.00" y1="104.00" y2="104.00" stroke="#2563eb" stroke-width="1.6"/>
+<line x1="447.00" x2="471.00" y1="514.00" y2="514.00" stroke="#2563eb" stroke-width="1.6"/>
+<rect x="436.00" y="227.00" width="46" height="164.00" fill="#2563eb" fill-opacity="0.22" stroke="#2563eb" stroke-width="1.8"><title>delete, last: Q1=0.30, median=0.50, Q3=0.70, mean=0.511, n=500</title></rect>
+<line x1="436.00" x2="482.00" y1="309.00" y2="309.00" stroke="#2563eb" stroke-width="2.6"/>
+<polygon points="459.00,299.41 464.00,304.41 459.00,309.41 454.00,304.41" fill="#ffffff" stroke="#2563eb" stroke-width="1.8"><title>mean=0.511</title></polygon>
+<text x="459.00" y="301.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#2563eb" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.50</text>
+<text x="295.00" y="564" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">position in the user history</text>
+<text x="825.00" y="82" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600" fill="#d97706">replace random</text>
+<line x1="620" x2="1030" y1="514.00" y2="514.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="518.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.0</text>
+<line x1="620" x2="1030" y1="473.00" y2="473.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="477.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.1</text>
+<line x1="620" x2="1030" y1="432.00" y2="432.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="436.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.2</text>
+<line x1="620" x2="1030" y1="391.00" y2="391.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="395.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.3</text>
+<line x1="620" x2="1030" y1="350.00" y2="350.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="354.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.4</text>
+<line x1="620" x2="1030" y1="309.00" y2="309.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="313.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.5</text>
+<line x1="620" x2="1030" y1="268.00" y2="268.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="272.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.6</text>
+<line x1="620" x2="1030" y1="227.00" y2="227.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="231.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.7</text>
+<line x1="620" x2="1030" y1="186.00" y2="186.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="190.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.8</text>
+<line x1="620" x2="1030" y1="145.00" y2="145.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="149.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">0.9</text>
+<line x1="620" x2="1030" y1="104.00" y2="104.00" stroke="#cbd5e1" stroke-width="1"/>
+<text x="610" y="108.00" text-anchor="end" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">1.0</text>
+<rect x="620" y="104" width="410" height="410" fill="none" stroke="#94a3b8" stroke-width="1"/>
+<text x="661.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">first</text>
+<line x1="661.00" x2="661.00" y1="104.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="649.00" x2="673.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="649.00" x2="673.00" y1="186.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<rect x="638.00" y="104.00" width="46" height="41.00" fill="#d97706" fill-opacity="0.22" stroke="#d97706" stroke-width="1.8"><title>replace random, first: Q1=0.90, median=1.00, Q3=1.00, mean=0.951, n=2500</title></rect>
+<line x1="638.00" x2="684.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="2.6"/>
+<polygon points="661.00,119.29 666.00,124.29 661.00,129.29 656.00,124.29" fill="#ffffff" stroke="#d97706" stroke-width="1.8"><title>mean=0.951</title></polygon>
+<circle cx="653.00" cy="309.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.5: 1 observations</title></circle>
+<circle cx="669.00" cy="268.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.6: 6 observations</title></circle>
+<circle cx="653.00" cy="227.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.7: 18 observations</title></circle>
+<text x="661.00" y="117.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" stroke="#ffffff" stroke-width="4" paint-order="stroke">1.00</text>
+<text x="743.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">25%</text>
+<line x1="743.00" x2="743.00" y1="104.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="731.00" x2="755.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="731.00" x2="755.00" y1="186.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<rect x="720.00" y="104.00" width="46" height="41.00" fill="#d97706" fill-opacity="0.22" stroke="#d97706" stroke-width="1.8"><title>replace random, 25%: Q1=0.90, median=1.00, Q3=1.00, mean=0.968, n=2500</title></rect>
+<line x1="720.00" x2="766.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="2.6"/>
+<polygon points="743.00,112.12 748.00,117.12 743.00,122.12 738.00,117.12" fill="#ffffff" stroke="#d97706" stroke-width="1.8"><title>mean=0.968</title></polygon>
+<circle cx="735.00" cy="268.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.6: 1 observations</title></circle>
+<circle cx="751.00" cy="227.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.7: 9 observations</title></circle>
+<text x="743.00" y="117.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" stroke="#ffffff" stroke-width="4" paint-order="stroke">1.00</text>
+<text x="825.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">50%</text>
+<line x1="825.00" x2="825.00" y1="104.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="813.00" x2="837.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="813.00" x2="837.00" y1="186.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<rect x="802.00" y="104.00" width="46" height="41.00" fill="#d97706" fill-opacity="0.22" stroke="#d97706" stroke-width="1.8"><title>replace random, 50%: Q1=0.90, median=1.00, Q3=1.00, mean=0.963, n=2500</title></rect>
+<line x1="802.00" x2="848.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="2.6"/>
+<polygon points="825.00,114.20 830.00,119.20 825.00,124.20 820.00,119.20" fill="#ffffff" stroke="#d97706" stroke-width="1.8"><title>mean=0.963</title></polygon>
+<circle cx="817.00" cy="268.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.6: 4 observations</title></circle>
+<circle cx="833.00" cy="227.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.7: 10 observations</title></circle>
+<text x="825.00" y="117.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" stroke="#ffffff" stroke-width="4" paint-order="stroke">1.00</text>
+<text x="907.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">75%</text>
+<line x1="907.00" x2="907.00" y1="104.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="895.00" x2="919.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="895.00" x2="919.00" y1="186.00" y2="186.00" stroke="#d97706" stroke-width="1.6"/>
+<rect x="884.00" y="104.00" width="46" height="41.00" fill="#d97706" fill-opacity="0.22" stroke="#d97706" stroke-width="1.8"><title>replace random, 75%: Q1=0.90, median=1.00, Q3=1.00, mean=0.951, n=2500</title></rect>
+<line x1="884.00" x2="930.00" y1="104.00" y2="104.00" stroke="#d97706" stroke-width="2.6"/>
+<polygon points="907.00,119.27 912.00,124.27 907.00,129.27 902.00,124.27" fill="#ffffff" stroke="#d97706" stroke-width="1.8"><title>mean=0.951</title></polygon>
+<circle cx="899.00" cy="309.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.5: 2 observations</title></circle>
+<circle cx="915.00" cy="268.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.6: 6 observations</title></circle>
+<circle cx="899.00" cy="227.00" r="3" fill="#ffffff" stroke="#d97706" stroke-width="1.3"><title>outlier 0.7: 22 observations</title></circle>
+<text x="907.00" y="117.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" stroke="#ffffff" stroke-width="4" paint-order="stroke">1.00</text>
+<text x="989.00" y="536" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#334155">last</text>
+<line x1="989.00" x2="989.00" y1="145.00" y2="514.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="977.00" x2="1001.00" y1="145.00" y2="145.00" stroke="#d97706" stroke-width="1.6"/>
+<line x1="977.00" x2="1001.00" y1="514.00" y2="514.00" stroke="#d97706" stroke-width="1.6"/>
+<rect x="966.00" y="350.00" width="46" height="164.00" fill="#d97706" fill-opacity="0.22" stroke="#d97706" stroke-width="1.8"><title>replace random, last: Q1=0.00, median=0.20, Q3=0.40, mean=0.249, n=2500</title></rect>
+<line x1="966.00" x2="1012.00" y1="432.00" y2="432.00" stroke="#d97706" stroke-width="2.6"/>
+<polygon points="989.00,406.80 994.00,411.80 989.00,416.80 984.00,411.80" fill="#ffffff" stroke="#d97706" stroke-width="1.8"><title>mean=0.249</title></polygon>
+<text x="989.00" y="424.00" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="600" fill="#d97706" stroke="#ffffff" stroke-width="4" paint-order="stroke">0.20</text>
+<text x="825.00" y="564" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">position in the user history</text>
+<text x="24" y="309.00" text-anchor="middle" transform="rotate(-90 24 309.00)" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#334155">top-10 overlap</text>
+</svg>
