@@ -131,6 +131,7 @@ def _make_perturbations(
     replacement_repeats: int,
     base_seed: int,
     sample_index: int,
+    positions: list[tuple[str, int]] | None = None,
 ) -> list[Perturbation]:
     history_length = int(sample["history_lengths"])
     forbidden_item_ids = {
@@ -143,7 +144,9 @@ def _make_perturbations(
     ]
     perturbations: list[Perturbation] = []
 
-    for position_label, position_index in _unique_position_indices(history_length):
+    for position_label, position_index in (
+        _unique_position_indices(history_length) if positions is None else positions
+    ):
         original_item_id = int(sample["historical_ids"][position_index].item())
 
         delete_sample = _delete_item(sample, position_index)
@@ -213,6 +216,8 @@ def _score_samples(
         device=device,
         max_output_length=model.gr_output_length + 1,
     )
+    if (seq_features.past_lengths <= 0).any():
+        raise ValueError("Prediction requires a nonempty history")
     input_embeddings = model.embeddings.get_item_embeddings(seq_features.past_ids)
     seq_features = seq_features._replace(past_embeddings=input_embeddings)
 
@@ -314,7 +319,7 @@ def main(cfg: DictConfig) -> None:
         raise ValueError("Please provide ckpt_path=... for robustness evaluation")
 
     output_file = str(
-        _cfg_get(cfg, "output_file", "outputs/robustness/ml1m_hstu_robustness.csv")
+        _cfg_get(cfg, "output_file", "outputs/robustness/stage1/ml1m_hstu_robustness.csv")
     )
     num_users = int(_cfg_get(cfg, "num_users", 500))
     user_offset = int(_cfg_get(cfg, "user_offset", 0))

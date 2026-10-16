@@ -44,13 +44,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         type=Path,
-        default=Path("outputs/robustness/ml1m_hstu_robustness.csv"),
+        default=Path("outputs/robustness/stage1/ml1m_hstu_robustness.csv"),
         help="Path to the CSV produced by run_robustness.py.",
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
-        default=Path("outputs/robustness/plots"),
+        default=Path("outputs/robustness/stage1/plots"),
         help="Directory where SVG figures and summary files will be written.",
     )
     parser.add_argument(

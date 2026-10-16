@@ -1,0 +1,34 @@
+{
+  "mask_mode": "fixed_original",
+  "positions": [
+    "first",
+    "p25",
+    "p50",
+    "p75",
+    "last"
+  ],
+  "requested_time_shifts_seconds": [
+    -604800,
+    -86400,
+    -3600,
+    3600,
+    86400,
+    604800
+  ],
+  "repetitions_by_kind": {
+    "delete": 1,
+    "replace_random": 5,
+    "timestamp_only": 6
+  },
+  "aggregation": "equal-weight repeat means within each user/position/kind, followed by equal-weight user mean",
+  "clipped_and_zero_actual_time_shifts_included": true,
+  "bootstrap_repeats": 5000,
+  "bootstrap_seed": 42,
+  "confidence_intervals": "pointwise 95% user-bootstrap percentile intervals after within-user averaging",
+  "n_users": 500,
+  "rows_used": 30000,
+  "source_csv_sha256": "0e33fa464ab08dd050c169f9148ac368103857d0d03d3fb659da2b810db59f1f",
+  "analysis_script_sha256": "3d0588a28b1110de69f0c0c1d85a705aa02e090f54739a46fca03a9503266e02",
+  "saved_summary_mean_check": "passed",
+  "display_confidence_intervals": false
+}

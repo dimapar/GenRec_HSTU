@@ -1,0 +1,27 @@
+{
+  "independent_legacy_reproduction_all_columns_equal": true,
+  "legacy_comparison_rows": 15000,
+  "legacy_max_abs_metric_delta": {
+    "topk_overlap": 0.0,
+    "js_divergence": 1.8424267996669519e-09,
+    "top1_changed": 0.0
+  },
+  "legacy_seed_mismatches": 0,
+  "legacy_perturbed_item_id_mismatches": 0,
+  "legacy_original_topk_ids_mismatches": 0,
+  "legacy_perturbed_topk_ids_mismatches": 0,
+  "legacy_js_tolerance": {
+    "rtol": 1e-06,
+    "atol": 1e-11,
+    "reason": "float32 CUDA rounding with different inference batch shapes; rankings must agree exactly"
+  },
+  "time_only_mask_modes_max_abs_metric_difference": {
+    "topk_overlap": 0.0,
+    "js_divergence": 0.0,
+    "top1_changed": 0.0
+  },
+  "unchanged_bucket_rows": 36130,
+  "unchanged_bucket_max_js": 4.477598191860553e-15,
+  "unchanged_bucket_recommendation_changes": 0,
+  "status": "passed"
+}

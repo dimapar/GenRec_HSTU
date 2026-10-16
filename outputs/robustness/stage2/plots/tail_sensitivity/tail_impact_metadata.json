@@ -1,0 +1,42 @@
+{
+  "mask_mode": "fixed_original",
+  "distance_from_end": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "axis_position_equals_distance_plus_one": true,
+  "n_users": 500,
+  "rows_used": 60000,
+  "repetitions_by_kind": {
+    "delete": 1,
+    "replace_random": 5,
+    "timestamp_only": 6
+  },
+  "requested_time_shifts_seconds": [
+    -604800,
+    -86400,
+    -3600,
+    3600,
+    86400,
+    604800
+  ],
+  "clipped_and_noop_time_shifts_included": true,
+  "aggregation": "within-user equal-weight repeat means, then equal-weight user means",
+  "confidence_intervals": "pointwise 95% percentile bootstrap over users, not prediction intervals",
+  "bootstrap_repeats": 5000,
+  "bootstrap_seed": 42,
+  "last_minus_penultimate_contrasts": "paired within users after repeat averaging",
+  "source_csv_sha256": "0e33fa464ab08dd050c169f9148ac368103857d0d03d3fb659da2b810db59f1f",
+  "script_sha256": "bc7a8ced2b709d10baf220895e3e0e80e43a76815a8b2165927602da4158c2ba",
+  "mean_regression_check": "passed",
+  "display_intervals_on_graphs": false,
+  "confidence_intervals_in_tables": true
+}

@@ -1,0 +1,3261 @@
+{
+  "status": "complete",
+  "checkpoint": "logs\\train\\runs\\baseline\\checkpoints\\epoch_097.ckpt",
+  "checkpoint_sha256": "8a839a41f4d743a93c0b53ed1265b104040cc89566beb7adbe578aa922a81798",
+  "checkpoint_epoch": 97,
+  "protocol": {
+    "num_users": 500,
+    "user_offset": 0,
+    "replacement_repeats": 5,
+    "base_seed": 42,
+    "top_k": 10,
+    "seed_formula": "base_seed + user_index * 1009 + position_index * 31 + repetition",
+    "tail_count": 10,
+    "timestamp_shifts_seconds": [
+      -604800,
+      -86400,
+      -3600,
+      3600,
+      86400,
+      604800
+    ],
+    "timestamp_clipping": "previous <= changed <= next; first lower bound 0; last upper bound target timestamp",
+    "mask_modes": [
+      "dynamic",
+      "fixed_original"
+    ],
+    "timestamp_target": "unchanged; prediction-time anchor at current length",
+    "replacement_pool": "catalogue order; excludes original history and target"
+  },
+  "environment": {
+    "python": "3.10.3",
+    "torch": "2.14.0+cu132",
+    "cuda": "13.2",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 5060"
+  },
+  "inference_batch_size": 32,
+  "cohort": [
+    {
+      "user_index": 0,
+      "user_id": 1,
+      "history_length": 52,
+      "input_sha256": "3cf6ccddd4faff1f67ea685529646c26c9d36ce8370eec23ba139b060fa79c31"
+    },
+    {
+      "user_index": 1,
+      "user_id": 2,
+      "history_length": 128,
+      "input_sha256": "e5933f471131a20dd47d9a6e5f57e24303e0b83beea7bfa8cd5f6eacee130d65"
+    },
+    {
+      "user_index": 2,
+      "user_id": 3,
+      "history_length": 50,
+      "input_sha256": "8a7d1f267e96eac1ff0d8ff7869fa395403145c28345f94ba8a35b5645e1c7ca"
+    },
+    {
+      "user_index": 3,
+      "user_id": 4,
+      "history_length": 20,
+      "input_sha256": "94b11c44628a64d2692303fd1793e136dd49ddf4d5d8e95a828943b3c466d29a"
+    },
+    {
+      "user_index": 4,
+      "user_id": 5,
+      "history_length": 197,
+      "input_sha256": "a4dc5853f5f68ebc0d52a0bbe922cba7cd818d5a6c613a7a565e73fcbd0e7c6b"
+    },
+    {
+      "user_index": 5,
+      "user_id": 6,
+      "history_length": 70,
+      "input_sha256": "9e607ee08f105971db020c6b0f6ed3ef89e354fdf012f06af10a3efecd55ed3c"
+    },
+    {
+      "user_index": 6,
+      "user_id": 7,
+      "history_length": 30,
+      "input_sha256": "ed410d9bd65ab72bcd7a33fd3fefa256112938299be18035639c71867f3f0749"
+    },
+    {
+      "user_index": 7,
+      "user_id": 8,
+      "history_length": 138,
+      "input_sha256": "72332a12fa404dfbff6c977d6c5a1e426833dc75756c5e5114bf9f49248173bd"
+    },
+    {
+      "user_index": 8,
+      "user_id": 9,
+      "history_length": 105,
+      "input_sha256": "dad6a25a2a70f5b855c2cc9b058198f92c2f9ccc6cbc747a9ea7149e49549c5c"
+    },
+    {
+      "user_index": 9,
+      "user_id": 10,
+      "history_length": 200,
+      "input_sha256": "180c6b17a93373fce6e1c6d9e8e59cfac92fa789da5102f41962af19c38a3b9f"
+    },
+    {
+      "user_index": 10,
+      "user_id": 11,
+      "history_length": 136,
+      "input_sha256": "9c497c447f88e98a65776c3e603f835be28aa3984259056ffee9981264c4c866"
+    },
+    {
+      "user_index": 11,
+      "user_id": 12,
+      "history_length": 22,
+      "input_sha256": "de94ef0b9ce1c7218cbcf915aba2e4a958e2dc4ae76c6c4c7f60ebc6890865a1"
+    },
+    {
+      "user_index": 12,
+      "user_id": 13,
+      "history_length": 107,
+      "input_sha256": "3e2c5ac8ef8b5cf0e52fb5f5c44593595197389821d334fb747ba54bb259b985"
+    },
+    {
+      "user_index": 13,
+      "user_id": 14,
+      "history_length": 24,
+      "input_sha256": "8f1dd29c937c1a294c88f27da2d1e01170f24752f65f65d8bd6bc5a3ec54abad"
+    },
+    {
+      "user_index": 14,
+      "user_id": 15,
+      "history_length": 200,
+      "input_sha256": "f3da6401e33ea2ca9e9d54c676885eb16be85a9e3780d878c31a7d25cdefbcca"
+    },
+    {
+      "user_index": 15,
+      "user_id": 16,
+      "history_length": 34,
+      "input_sha256": "1ccef000754f84b6aba36f5eec8af96cd84db789434702542e9008f6139b1637"
+    },
+    {
+      "user_index": 16,
+      "user_id": 17,
+      "history_length": 200,
+      "input_sha256": "5903e5cf2907cf95d7dde52bbce9107ca94f57a7084a129a5c24367b67cd6215"
+    },
+    {
+      "user_index": 17,
+      "user_id": 18,
+      "history_length": 200,
+      "input_sha256": "451a3d22863db4c1aa9924a63e6196dec0fa454ec50a3505a3674deaedcf79d1"
+    },
+    {
+      "user_index": 18,
+      "user_id": 19,
+      "history_length": 200,
+      "input_sha256": "434b0d223d0b78d0bc25b2f965607307a853794b872e548b191ee7e4660b6c60"
+    },
+    {
+      "user_index": 19,
+      "user_id": 20,
+      "history_length": 23,
+      "input_sha256": "2f2fe594cd9fb604402a9c63b53ef4df068afcf20dc511cbab3810f2327e543e"
+    },
+    {
+      "user_index": 20,
+      "user_id": 21,
+      "history_length": 21,
+      "input_sha256": "1d787112f48d21e1c23921eb03582393d7b2f6a23da908c00835796ee99c4759"
+    },
+    {
+      "user_index": 21,
+      "user_id": 22,
+      "history_length": 200,
+      "input_sha256": "a3a9205d61fb0365d318855bc9d115672247d45175e3b04b11b42983e9ff25b6"
+    },
+    {
+      "user_index": 22,
+      "user_id": 23,
+      "history_length": 200,
+      "input_sha256": "4d24780436ee63eb6bc75c7a72f3a4a3bb9cd8ade59c53eae66689cef57a4c0d"
+    },
+    {
+      "user_index": 23,
+      "user_id": 24,
+      "history_length": 135,
+      "input_sha256": "725adc06dd9ab88952313243bfffde01b4d67c7c97d69a11348f718025af47b8"
+    },
+    {
+      "user_index": 24,
+      "user_id": 25,
+      "history_length": 84,
+      "input_sha256": "67b5b460bc6cac94f10860994a204369423a875a3a2e320d38d631c40d72c1d7"
+    },
+    {
+      "user_index": 25,
+      "user_id": 26,
+      "history_length": 200,
+      "input_sha256": "1fa24837bd3fe1fbd75ce50e7739e776592306d028fc686d06ff3cec3fabd266"
+    },
+    {
+      "user_index": 26,
+      "user_id": 27,
+      "history_length": 69,
+      "input_sha256": "f2dd0321b21a41eef9fee7cd468f35b06b66d3d603d276a16c9f74fccc2078a9"
+    },
+    {
+      "user_index": 27,
+      "user_id": 28,
+      "history_length": 106,
+      "input_sha256": "89f798c25a847ce9272fa9cb592a0b418e8bc2d298559792e6d1ededa3bfee75"
+    },
+    {
+      "user_index": 28,
+      "user_id": 29,
+      "history_length": 107,
+      "input_sha256": "0f53c0eba5e86b03a187675c1bb5aba27289a0dd00eaaa5fa9afb8d431f984c8"
+    },
+    {
+      "user_index": 29,
+      "user_id": 30,
+      "history_length": 42,
+      "input_sha256": "f3147edfdeb04e5443ba350553dc6bb6097dc139cfa2a8ee058d7d09c792e2aa"
+    },
+    {
+      "user_index": 30,
+      "user_id": 31,
+      "history_length": 118,
+      "input_sha256": "54ba0c563d48f49f674a300428ff1be5a5923606ebbe32b0d644da30fd7e67b3"
+    },
+    {
+      "user_index": 31,
+      "user_id": 32,
+      "history_length": 47,
+      "input_sha256": "752402d4c843f33842da353c63180c9b29210560d527631fb8cdf50965e06315"
+    },
+    {
+      "user_index": 32,
+      "user_id": 33,
+      "history_length": 200,
+      "input_sha256": "030a69f3c2d80c83bafeed0e6671bbdb9133b46a1abd6e4d256d981190bb1d3a"
+    },
+    {
+      "user_index": 33,
+      "user_id": 34,
+      "history_length": 163,
+      "input_sha256": "e1b353098d4b0e0444aa3b119d70fb4331ce5d7484184ddecdb1516064320357"
+    },
+    {
+      "user_index": 34,
+      "user_id": 35,
+      "history_length": 197,
+      "input_sha256": "b89952746e72cfb750510ebb25f5780193ed339a11ca7a11cbe1829e057ef2b9"
+    },
+    {
+      "user_index": 35,
+      "user_id": 36,
+      "history_length": 200,
+      "input_sha256": "7e962e5fdacc4a162cb429d7621a2b1c666a1ccb4703602093477912b5238fbd"
+    },
+    {
+      "user_index": 36,
+      "user_id": 37,
+      "history_length": 52,
+      "input_sha256": "801c5f9735bc466bd0896c41ef2dd8cc1f453b9d53dfb93134b7272ccc1deaf0"
+    },
+    {
+      "user_index": 37,
+      "user_id": 38,
+      "history_length": 99,
+      "input_sha256": "74631b28ef8044f98d8af5735874384d609e708e49a2f10ec131ff0ff4809003"
+    },
+    {
+      "user_index": 38,
+      "user_id": 39,
+      "history_length": 61,
+      "input_sha256": "0027f1e71f943ca048ea0d1d5312d49d99a5873d4e9201860a02e2bc124a85dc"
+    },
+    {
+      "user_index": 39,
+      "user_id": 40,
+      "history_length": 95,
+      "input_sha256": "7c716745805513cfc42ff883d1ac1fe70fffaf8f4deb21c3cfc107129bd36329"
+    },
+    {
+      "user_index": 40,
+      "user_id": 41,
+      "history_length": 24,
+      "input_sha256": "fbcdeef14cb9fce1ff1640e929f4b038836e2e16bb4843efd7554d7a2395034f"
+    },
+    {
+      "user_index": 41,
+      "user_id": 42,
+      "history_length": 200,
+      "input_sha256": "59edc75be56bbaf5ec291bc7f2dd2042e301418c6c72828b54e3a8def81d3e7f"
+    },
+    {
+      "user_index": 42,
+      "user_id": 43,
+      "history_length": 23,
+      "input_sha256": "b3ab8a65e152ef349932cd4ce4431173d42be600017525b15cab2b95e768ea4e"
+    },
+    {
+      "user_index": 43,
+      "user_id": 44,
+      "history_length": 192,
+      "input_sha256": "4d096f42f364ad1ea3e52479ca26cb76543120c8c686e3ef8e70e0fefc3ab576"
+    },
+    {
+      "user_index": 44,
+      "user_id": 45,
+      "history_length": 200,
+      "input_sha256": "fd863d6359a34feae9d815338d89e71187e104f6c0dd6efdce9d12677345b1b8"
+    },
+    {
+      "user_index": 45,
+      "user_id": 46,
+      "history_length": 40,
+      "input_sha256": "34e03af7f63fcebb7211594dc4c5d1fd3541233d2e6354101e1eab6af3137daf"
+    },
+    {
+      "user_index": 46,
+      "user_id": 47,
+      "history_length": 21,
+      "input_sha256": "d9570dfd2e9ad63845408cea37ecf7775e244b2b7845571209e8467fd4d0f961"
+    },
+    {
+      "user_index": 47,
+      "user_id": 48,
+      "history_length": 200,
+      "input_sha256": "32dcf1153238f857ffdebae50d92b33c5eab4331bb48520f04bedbd29614b3ce"
+    },
+    {
+      "user_index": 48,
+      "user_id": 49,
+      "history_length": 107,
+      "input_sha256": "3b4a622e49b43f461e3d303bb926b61c48987a8aafe252830b66858dfd49856a"
+    },
+    {
+      "user_index": 49,
+      "user_id": 50,
+      "history_length": 42,
+      "input_sha256": "29827948bc65239dfbc4fe8025fd4fff746921fdc017d3fc4bec2b9ebf3605a6"
+    },
+    {
+      "user_index": 50,
+      "user_id": 51,
+      "history_length": 39,
+      "input_sha256": "d57c6d3485cb0edb14a40bba2d7e9accdf29ef77b69d3758ea12736ea3d18759"
+    },
+    {
+      "user_index": 51,
+      "user_id": 52,
+      "history_length": 78,
+      "input_sha256": "900b832daa7f91f2cb8b80926c68dc75549fb12e197c52c1bf54583e8859ccc1"
+    },
+    {
+      "user_index": 52,
+      "user_id": 53,
+      "history_length": 200,
+      "input_sha256": "73c33405a3be09aba3650ef3950d72d35d2af6f8a68cdb9e1b69a4b00a9459ef"
+    },
+    {
+      "user_index": 53,
+      "user_id": 54,
+      "history_length": 39,
+      "input_sha256": "8ded181356f6592cc32b4597de5a84eeb4695a98df0d5e1ad15dab97784e6dcd"
+    },
+    {
+      "user_index": 54,
+      "user_id": 55,
+      "history_length": 24,
+      "input_sha256": "64197582d9d47e86cd88bf55365fd5630c03cf6f88d8d8ad369d7d9792af972a"
+    },
+    {
+      "user_index": 55,
+      "user_id": 56,
+      "history_length": 66,
+      "input_sha256": "2f88107c96d9a40036d157e170836d5bc39ab01b2c22fb77b53eb1a6a78b3ff2"
+    },
+    {
+      "user_index": 56,
+      "user_id": 57,
+      "history_length": 63,
+      "input_sha256": "9001e4477e6e498044a408f7f72ff833e8567877bfb788a52e7b112ad9e5f6e4"
+    },
+    {
+      "user_index": 57,
+      "user_id": 58,
+      "history_length": 200,
+      "input_sha256": "8f4fcd5ea1202332b0340a9a14570e84551c773303a9223fb8a983cccbfbf59d"
+    },
+    {
+      "user_index": 58,
+      "user_id": 59,
+      "history_length": 200,
+      "input_sha256": "15db25c17fd23f426a9362fe5f8123f812b4efccc766f354fc199237891cd714"
+    },
+    {
+      "user_index": 59,
+      "user_id": 60,
+      "history_length": 69,
+      "input_sha256": "206fabef1e81cdf953b62cc24ad815b5f3a4dc29efbd0e58c5a60170a925249e"
+    },
+    {
+      "user_index": 60,
+      "user_id": 61,
+      "history_length": 35,
+      "input_sha256": "b2a7ea21421f2f5c6561eb865c74bd170fe86782541641b00a399b0cb710ad47"
+    },
+    {
+      "user_index": 61,
+      "user_id": 62,
+      "history_length": 200,
+      "input_sha256": "82ed914a028cf3f8e85bdcbfdf1210692341ff09a30ce8b514025887c2dcacca"
+    },
+    {
+      "user_index": 62,
+      "user_id": 63,
+      "history_length": 97,
+      "input_sha256": "2270dbc8158eb43389dbe0ae11de8a1f2268a46c140f8c1b0d18840ada3a9d73"
+    },
+    {
+      "user_index": 63,
+      "user_id": 64,
+      "history_length": 26,
+      "input_sha256": "d23594c5bf3b06cf721d16aa065794a5aab8a925b20afb4bfa5f03cfda24dbb1"
+    },
+    {
+      "user_index": 64,
+      "user_id": 65,
+      "history_length": 120,
+      "input_sha256": "cd45a029ed8e93c369690673297581a4fa9bc40b45b415de7689e547dbd53503"
+    },
+    {
+      "user_index": 65,
+      "user_id": 66,
+      "history_length": 25,
+      "input_sha256": "c2edc62e6018f6fee4d3d189e031d1610bb32039d573abee2e43e0f5ba6721cd"
+    },
+    {
+      "user_index": 66,
+      "user_id": 67,
+      "history_length": 63,
+      "input_sha256": "132e6283781cc2ffd94d55d9f9fb7dcd6e7c394f0b83bfeccfcb15150debcf03"
+    },
+    {
+      "user_index": 67,
+      "user_id": 68,
+      "history_length": 71,
+      "input_sha256": "20c075f88fa4d29c69302f241afec8a00184ced8000e349ec23781e12b5c22cc"
+    },
+    {
+      "user_index": 68,
+      "user_id": 69,
+      "history_length": 64,
+      "input_sha256": "4b7e31d983064cdf1b6cad5402b1617707a70212206e8366c4fd6c7091477332"
+    },
+    {
+      "user_index": 69,
+      "user_id": 70,
+      "history_length": 53,
+      "input_sha256": "a1141297145518b56d76664cdd86136cfcefbbc17e60d43490161fcb55e3cb74"
+    },
+    {
+      "user_index": 70,
+      "user_id": 71,
+      "history_length": 28,
+      "input_sha256": "5ab37c053fe6c595e01acb3456f44bc0731307d9c7f76a11a739f577f7799be9"
+    },
+    {
+      "user_index": 71,
+      "user_id": 72,
+      "history_length": 42,
+      "input_sha256": "7261b8720e2b89b42ab8c92a7161badbf148f4aaa0c4cc5c54600706c1f83d17"
+    },
+    {
+      "user_index": 72,
+      "user_id": 73,
+      "history_length": 200,
+      "input_sha256": "9338afe83b4b73111d007edcfafd4eb2ca5f180682fe313c58a3453e817a31fc"
+    },
+    {
+      "user_index": 73,
+      "user_id": 74,
+      "history_length": 42,
+      "input_sha256": "3d8c4da75614493899a59b4fd5e2e3e2ecd06e934def161ca61f54f61356c83c"
+    },
+    {
+      "user_index": 74,
+      "user_id": 75,
+      "history_length": 174,
+      "input_sha256": "288231f2164e697e2a925a7524c52d7e9290ed062fbf48622e9fa70cafada690"
+    },
+    {
+      "user_index": 75,
+      "user_id": 76,
+      "history_length": 86,
+      "input_sha256": "ca94f6b88cbee393d32303d756242dc71200d1b94b1d4fddca26d43f0ea40994"
+    },
+    {
+      "user_index": 76,
+      "user_id": 77,
+      "history_length": 38,
+      "input_sha256": "244094fa265d2c084bcccd85cd50fc0ee7dc1f739af32671cd5801c045791b0e"
+    },
+    {
+      "user_index": 77,
+      "user_id": 78,
+      "history_length": 139,
+      "input_sha256": "df3fd963d646a1072b2755a26d86ea9f0dc076043bf093a2b9ed0cd5092b2353"
+    },
+    {
+      "user_index": 78,
+      "user_id": 79,
+      "history_length": 30,
+      "input_sha256": "2e4c1589f53dcc98d95516b1338bb1fd90fd7a8c1c0ac89ea24ffae66a28d22a"
+    },
+    {
+      "user_index": 79,
+      "user_id": 80,
+      "history_length": 47,
+      "input_sha256": "66ae204abf069445c204c7e6eb77623d338f05709e4fc8f491859e010e234544"
+    },
+    {
+      "user_index": 80,
+      "user_id": 81,
+      "history_length": 85,
+      "input_sha256": "43425b7a5946d917db0898c49dee1c644a0fd3585ccc13a062dc14635b7d58ca"
+    },
+    {
+      "user_index": 81,
+      "user_id": 82,
+      "history_length": 117,
+      "input_sha256": "852acab318aa95c65da4fefe172a76ecd8ce8d4b8fdf46bc7543b02a00fa2ac2"
+    },
+    {
+      "user_index": 82,
+      "user_id": 83,
+      "history_length": 98,
+      "input_sha256": "0162af86d0e1b32ad1bb4fa596d626aabd81d3da38fbf748927e6c7342ba03c8"
+    },
+    {
+      "user_index": 83,
+      "user_id": 84,
+      "history_length": 30,
+      "input_sha256": "3a28fe536753746b9e1f2d881ab4738b27aaaf22f5964bd28fa3dfa110d268b1"
+    },
+    {
+      "user_index": 84,
+      "user_id": 85,
+      "history_length": 38,
+      "input_sha256": "269afc510e76e497a6126efe6325f63bc507ddb971c9f7056ddbabde6102856f"
+    },
+    {
+      "user_index": 85,
+      "user_id": 86,
+      "history_length": 47,
+      "input_sha256": "5223158371faa791e58f37e2f0fc764adc77a16fea2cd01d396ef62145969710"
+    },
+    {
+      "user_index": 86,
+      "user_id": 87,
+      "history_length": 58,
+      "input_sha256": "7b43235d877ff14b5b329b505c415a76c3bab5c60b596deb3ac2e09dc282b690"
+    },
+    {
+      "user_index": 87,
+      "user_id": 88,
+      "history_length": 67,
+      "input_sha256": "22c05f89c374e24590e3702b12946493b1a5949d803a316f8bc930658be0043d"
+    },
+    {
+      "user_index": 88,
+      "user_id": 89,
+      "history_length": 20,
+      "input_sha256": "ba64aab42dc0bfb7651aec905b5b426551813e22054817aecfb881f3c130aeb2"
+    },
+    {
+      "user_index": 89,
+      "user_id": 90,
+      "history_length": 200,
+      "input_sha256": "d09e12d881063b19b1b8ff367b97661024b3d625193c0d2206fdc537b29a0854"
+    },
+    {
+      "user_index": 90,
+      "user_id": 91,
+      "history_length": 43,
+      "input_sha256": "249582af13fc4b2f4e8b2f1f51d6422b7822c2c1e85786439bfb95318a7e2504"
+    },
+    {
+      "user_index": 91,
+      "user_id": 92,
+      "history_length": 200,
+      "input_sha256": "90c65811028206ab7ef80c3db90f1c1dbd4d2d3eb3519ca074cdb18b27d918a4"
+    },
+    {
+      "user_index": 92,
+      "user_id": 93,
+      "history_length": 200,
+      "input_sha256": "c437e652b01541a9a1e5a06c18a9412b382b29a3ba57a3b6f61e4429aa499fb8"
+    },
+    {
+      "user_index": 93,
+      "user_id": 94,
+      "history_length": 20,
+      "input_sha256": "0cde06bb734f0a59ca68eae8f094d44829352b12944821307d28178715a89822"
+    },
+    {
+      "user_index": 94,
+      "user_id": 95,
+      "history_length": 98,
+      "input_sha256": "07760e56cbd6fdc2faa8d87bb49a92881b081eee1bf22c3ba58f189f0f0a24f0"
+    },
+    {
+      "user_index": 95,
+      "user_id": 96,
+      "history_length": 80,
+      "input_sha256": "cd951593a1af95bcbe355f799ba744a8e20070e6ec53aa0f6fa9d40fbac544e8"
+    },
+    {
+      "user_index": 96,
+      "user_id": 97,
+      "history_length": 153,
+      "input_sha256": "852f0c1c823d36debee985bed41725bd363163b9e579bc06ba3b1629bc033884"
+    },
+    {
+      "user_index": 97,
+      "user_id": 98,
+      "history_length": 19,
+      "input_sha256": "0b9388b8ad018afeb71b8d7e72905758cedceeb87aeeebf3634ab5451132e6c3"
+    },
+    {
+      "user_index": 98,
+      "user_id": 99,
+      "history_length": 106,
+      "input_sha256": "5588d45b6001f5ae52145f205a12ea7fc3c662e1a061c5a54b8ab651e333954a"
+    },
+    {
+      "user_index": 99,
+      "user_id": 100,
+      "history_length": 75,
+      "input_sha256": "6fa135b464ba1e2d7db57c456a465bcbc48e4847ec0548291e4b3cc623be56d6"
+    },
+    {
+      "user_index": 100,
+      "user_id": 101,
+      "history_length": 105,
+      "input_sha256": "18aef2df9c9bf3fc5fcfee44fe7b44810e0f7d320c49610548f923b07f38ad3f"
+    },
+    {
+      "user_index": 101,
+      "user_id": 102,
+      "history_length": 131,
+      "input_sha256": "afe17a9ab57950bb5be7b729e18e6413b213771c566061c22080868884dc3bf7"
+    },
+    {
+      "user_index": 102,
+      "user_id": 103,
+      "history_length": 114,
+      "input_sha256": "7b6124e516a7ce2d5b6bec7e6e99a99d7ff5ae4ffb9829db1ac388d5ffc13e2e"
+    },
+    {
+      "user_index": 103,
+      "user_id": 104,
+      "history_length": 45,
+      "input_sha256": "87b3034c6b4d72e93755d4975240cf25078f15f84293515f7616bb2cf84d7e98"
+    },
+    {
+      "user_index": 104,
+      "user_id": 105,
+      "history_length": 60,
+      "input_sha256": "b4c81f4478a4e09ba09563dd60ae2b145c311c464bdc869c10ee8468ffb0ac4f"
+    },
+    {
+      "user_index": 105,
+      "user_id": 106,
+      "history_length": 46,
+      "input_sha256": "6179d2047fdf3bc62a9df805432ef799511996fb1604a706f8a1d26cd8d8d1de"
+    },
+    {
+      "user_index": 106,
+      "user_id": 107,
+      "history_length": 120,
+      "input_sha256": "4eddfc9c2438b5977b0d9a5d97e8483cb600085b9bfb91563667c16f5d12d8ae"
+    },
+    {
+      "user_index": 107,
+      "user_id": 108,
+      "history_length": 36,
+      "input_sha256": "6815a6a71d313e9d261ebc799b70bfa42354972e2f3d8fbe6b8e25a4e60606a8"
+    },
+    {
+      "user_index": 108,
+      "user_id": 109,
+      "history_length": 80,
+      "input_sha256": "635eb1d832ca6a00552fc02526588ee38af062690be7f2496192ca2275471ab3"
+    },
+    {
+      "user_index": 109,
+      "user_id": 110,
+      "history_length": 79,
+      "input_sha256": "1a4cddea0b01ec62b5a9dbc197615d5f66c2b16f3e6572e604e68be139fd6009"
+    },
+    {
+      "user_index": 110,
+      "user_id": 111,
+      "history_length": 91,
+      "input_sha256": "faf56bdff8492439529e25a7a93a18d0a7a40cdd9516d8e1dec0fdee8145ca0d"
+    },
+    {
+      "user_index": 111,
+      "user_id": 112,
+      "history_length": 59,
+      "input_sha256": "84f6ff4a4c629fb4535f523d33a3ba0526fd28e1aa60fcb1b057b1ac9a6b4800"
+    },
+    {
+      "user_index": 112,
+      "user_id": 113,
+      "history_length": 67,
+      "input_sha256": "6fcd62550fd2fccb255b165988ae00adeee9baed1cb86c8d31c9ac24ec4233f1"
+    },
+    {
+      "user_index": 113,
+      "user_id": 114,
+      "history_length": 97,
+      "input_sha256": "a11faa40875bb908b1d302f6b80cac5bc02eb181d386e6fd37bccd9d722210a5"
+    },
+    {
+      "user_index": 114,
+      "user_id": 115,
+      "history_length": 37,
+      "input_sha256": "716f9ac7951cdfae4369f29579398ec382af99373a00222534f81dc54d80d0ac"
+    },
+    {
+      "user_index": 115,
+      "user_id": 116,
+      "history_length": 85,
+      "input_sha256": "6cbede40717e927cc00770dfeb5638c46fd06b453e0122631832d6eb7a7bd6ff"
+    },
+    {
+      "user_index": 116,
+      "user_id": 117,
+      "history_length": 200,
+      "input_sha256": "40b1bfe8dc44a41234a458928a628451785db5128f2dc8f416b391ef6073a981"
+    },
+    {
+      "user_index": 117,
+      "user_id": 118,
+      "history_length": 200,
+      "input_sha256": "6c66c06ef111155b0d8a87ac53a7906c45abb65cca3f8328f050de13e3b15ce4"
+    },
+    {
+      "user_index": 118,
+      "user_id": 119,
+      "history_length": 104,
+      "input_sha256": "5daac2bbb8353e9a6e568514cf292caaa0b7719a9020d86fe9023921cac4b475"
+    },
+    {
+      "user_index": 119,
+      "user_id": 120,
+      "history_length": 62,
+      "input_sha256": "350e9c26a2c539cb0782a2e329653e0f8a6b48d8fc3e9546699c88e9ae78f1fb"
+    },
+    {
+      "user_index": 120,
+      "user_id": 121,
+      "history_length": 71,
+      "input_sha256": "07485c6b31255965c758d9654d8538c4fe14001eb32b57933d93bf0a6ed7a11f"
+    },
+    {
+      "user_index": 121,
+      "user_id": 122,
+      "history_length": 56,
+      "input_sha256": "09beb8d0969e61b7d08cef80ca1e9f9bc545a74b7e2b96fffeb6689c248bbb2f"
+    },
+    {
+      "user_index": 122,
+      "user_id": 123,
+      "history_length": 200,
+      "input_sha256": "8082f80947924ad88f813e3526566c2ff6360a6940fe7e4d0b10856e94f14b78"
+    },
+    {
+      "user_index": 123,
+      "user_id": 124,
+      "history_length": 22,
+      "input_sha256": "d02804bb49c99e2d2705d212d4d197590ca75fe8016965550adfa528301e475b"
+    },
+    {
+      "user_index": 124,
+      "user_id": 125,
+      "history_length": 70,
+      "input_sha256": "400aa1341f933db1b7be690c1fa3e09598fb4a20222cbf2ec536f639b65d8890"
+    },
+    {
+      "user_index": 125,
+      "user_id": 126,
+      "history_length": 50,
+      "input_sha256": "bdb80e6d090a1a29262b9b714836528af6c650708110db39d8ac0fbfbbc53e76"
+    },
+    {
+      "user_index": 126,
+      "user_id": 127,
+      "history_length": 173,
+      "input_sha256": "beb8c6708bef103f4140a403970e1096607bbf43efc238630ae9f21b8f90d437"
+    },
+    {
+      "user_index": 127,
+      "user_id": 128,
+      "history_length": 21,
+      "input_sha256": "9baabada79faeeea9056336f9f0ec7d418546ad0161e20a2ed1b62b5d4d3b5ed"
+    },
+    {
+      "user_index": 128,
+      "user_id": 129,
+      "history_length": 157,
+      "input_sha256": "96879287366674625caae4557e7602e656f26a8e9075fd8154793fb390660a99"
+    },
+    {
+      "user_index": 129,
+      "user_id": 130,
+      "history_length": 134,
+      "input_sha256": "2cf9d9c451042578fcebae739c150603841c4c30769786ce8671ba925d6a4019"
+    },
+    {
+      "user_index": 130,
+      "user_id": 131,
+      "history_length": 200,
+      "input_sha256": "4e9baf6a68c256fd6beeeb7ecc8bf0d2d80bcf202336a8620aec63bf4957791d"
+    },
+    {
+      "user_index": 131,
+      "user_id": 132,
+      "history_length": 88,
+      "input_sha256": "d2b56970cddaa2efb20130030ca2321ceb1c1bb6132dcae36314f5a1ea7b8d84"
+    },
+    {
+      "user_index": 132,
+      "user_id": 133,
+      "history_length": 169,
+      "input_sha256": "2dc78c08c527c1b86435724fd74b1ec448b789abc1548f304e44647aa15b6881"
+    },
+    {
+      "user_index": 133,
+      "user_id": 134,
+      "history_length": 182,
+      "input_sha256": "674d46a79244a7e8ccb4033f22b43f4839d608689e18760fd5b3be4aa42bb03f"
+    },
+    {
+      "user_index": 134,
+      "user_id": 135,
+      "history_length": 69,
+      "input_sha256": "a0c1ba0a986d6ff90e7e2f9767ff5365f216ed4f63af959ae3bf492af1b20cb2"
+    },
+    {
+      "user_index": 135,
+      "user_id": 136,
+      "history_length": 200,
+      "input_sha256": "5f103d2fcb8c7a30aa3e15b8beeb64e5f2ae54188244dfca0cc5a1de6c3ec530"
+    },
+    {
+      "user_index": 136,
+      "user_id": 137,
+      "history_length": 200,
+      "input_sha256": "0061e6840a29ea30d194d8b86320455036a79c1086af3035a4db05122a0f5b38"
+    },
+    {
+      "user_index": 137,
+      "user_id": 138,
+      "history_length": 64,
+      "input_sha256": "363563aa37af9b575a1cc7c068619e634275a124cb3f9adb2a539f92b8a2329b"
+    },
+    {
+      "user_index": 138,
+      "user_id": 139,
+      "history_length": 200,
+      "input_sha256": "ee02d31e58fa0e028e1a61db74948f85473bfa73d5677008e53e85ce260fa277"
+    },
+    {
+      "user_index": 139,
+      "user_id": 140,
+      "history_length": 54,
+      "input_sha256": "f931eacc728b9df419cbdeeadde09caf1000fa119910e28f33e8c1fd19cf16f6"
+    },
+    {
+      "user_index": 140,
+      "user_id": 141,
+      "history_length": 22,
+      "input_sha256": "5f2ec2285f57114f6904f1179735e60385557e6e99041d80194f8be9203b23c5"
+    },
+    {
+      "user_index": 141,
+      "user_id": 142,
+      "history_length": 46,
+      "input_sha256": "9fbf1276191ba0317ea9c4551740938a8d940d0ddf651128387c6ef2fecfe8c8"
+    },
+    {
+      "user_index": 142,
+      "user_id": 143,
+      "history_length": 67,
+      "input_sha256": "05d13bb8af669e9e2a1ef979684ddfc9996f89962b2a0c5171c50a8eca966247"
+    },
+    {
+      "user_index": 143,
+      "user_id": 144,
+      "history_length": 31,
+      "input_sha256": "cb6b9682b439e58a6cbd38ced7b4a37b5d41d53638a73605f724a17af85704ca"
+    },
+    {
+      "user_index": 144,
+      "user_id": 145,
+      "history_length": 38,
+      "input_sha256": "5b1acca09be7fb68dd7e7fb11bc280a810a8689f1ad3df35f672d0fb7f0f5416"
+    },
+    {
+      "user_index": 145,
+      "user_id": 146,
+      "history_length": 200,
+      "input_sha256": "5ebad27485c71873d1fc437e1661b34bf8582939dc457753b5cc573ce3875859"
+    },
+    {
+      "user_index": 146,
+      "user_id": 147,
+      "history_length": 186,
+      "input_sha256": "adf80c48d9fbe044a37371286da0cce67f122b456ecd10550a98df77fcfa1b0e"
+    },
+    {
+      "user_index": 147,
+      "user_id": 148,
+      "history_length": 200,
+      "input_sha256": "e1a91a0dd56a1d6db09d6b45bb7ec02159bec0283e3dbeb4054c4afdfcd9f54a"
+    },
+    {
+      "user_index": 148,
+      "user_id": 149,
+      "history_length": 200,
+      "input_sha256": "dfeaf2c54c38a58f0535e04d9171ea6fae2983ec46bba0e7bea710c07cb72497"
+    },
+    {
+      "user_index": 149,
+      "user_id": 150,
+      "history_length": 200,
+      "input_sha256": "190b7be1506efa6e1d181f7069a3f45bdc4dcd769df27e352f8d236b0c05488d"
+    },
+    {
+      "user_index": 150,
+      "user_id": 151,
+      "history_length": 200,
+      "input_sha256": "1a758adb4edc529796415496fc47c997e911713c7b2b192547d4f661058176c8"
+    },
+    {
+      "user_index": 151,
+      "user_id": 152,
+      "history_length": 23,
+      "input_sha256": "f525267bfe6b78e0d78c8c032d7ab34bd678ac86338d4bd55c8e2c41753df776"
+    },
+    {
+      "user_index": 152,
+      "user_id": 153,
+      "history_length": 25,
+      "input_sha256": "550f3a489de1c45026edfd8540990b90e43bf0dfab508fbe2cc5d029fc519849"
+    },
+    {
+      "user_index": 153,
+      "user_id": 154,
+      "history_length": 43,
+      "input_sha256": "98633aa1af4b45250ba87026b781cae60ae5e2a10583cf009c7664dac9565838"
+    },
+    {
+      "user_index": 154,
+      "user_id": 155,
+      "history_length": 95,
+      "input_sha256": "1f4ad56e96498b007c49d061d8df238c0b1cbb9a627219cbd4af0c26cce236e3"
+    },
+    {
+      "user_index": 155,
+      "user_id": 156,
+      "history_length": 147,
+      "input_sha256": "15e5c7e4ec276445cbcb84972a5129db22e1b95836de1adb21d644c7a7453dd7"
+    },
+    {
+      "user_index": 156,
+      "user_id": 157,
+      "history_length": 200,
+      "input_sha256": "63c157a74d96be72ec0985e25913f6e34ecc7f4c3519c2bea95a5dbbbf91aa38"
+    },
+    {
+      "user_index": 157,
+      "user_id": 158,
+      "history_length": 21,
+      "input_sha256": "88306cc7da800f0660c685d57c05cdcab1a5f22a11b8b9dfe02311170ed476bb"
+    },
+    {
+      "user_index": 158,
+      "user_id": 159,
+      "history_length": 35,
+      "input_sha256": "70967c1e105add9d708a2e2ac1f51ca515f858c20328a6c5261a4987409d21c7"
+    },
+    {
+      "user_index": 159,
+      "user_id": 160,
+      "history_length": 19,
+      "input_sha256": "3be1bd3de15567cb8ab94b1698372ca69fd8727a0e11088f98f1383666fbd8ee"
+    },
+    {
+      "user_index": 160,
+      "user_id": 161,
+      "history_length": 200,
+      "input_sha256": "50494acafbbbe45c40f9e263f9e6c15a628fcd1a69de6f15d75a8d531aca9a53"
+    },
+    {
+      "user_index": 161,
+      "user_id": 162,
+      "history_length": 106,
+      "input_sha256": "0163f011f626dbd5eafa2c3129962b75b3cecbe29687d5eae1972db7114c9754"
+    },
+    {
+      "user_index": 162,
+      "user_id": 163,
+      "history_length": 200,
+      "input_sha256": "2d121ae9a375bec8cd92e1999d8b2630b36771066c31639799ab76293757ab50"
+    },
+    {
+      "user_index": 163,
+      "user_id": 164,
+      "history_length": 25,
+      "input_sha256": "e6d1002418f483c65de1440fefe950b87071f9757e3f94350cfa599f6748968c"
+    },
+    {
+      "user_index": 164,
+      "user_id": 165,
+      "history_length": 109,
+      "input_sha256": "2d7e7680e811dffc1b0af51148653c4e0afb9b798eac0beddbb69715dacdb342"
+    },
+    {
+      "user_index": 165,
+      "user_id": 166,
+      "history_length": 200,
+      "input_sha256": "ae410cf2bf4f2c183dce5426397788d75b4daee6c8740455f6359dd7efcafc02"
+    },
+    {
+      "user_index": 166,
+      "user_id": 167,
+      "history_length": 57,
+      "input_sha256": "1e8ef9f24c64e6e6de6c8ecb3b42b5f051c032c912cd0ec4029ab1f2152d27b7"
+    },
+    {
+      "user_index": 167,
+      "user_id": 168,
+      "history_length": 25,
+      "input_sha256": "53e611401d8b7732fc5da685e0c806a6be7732e3f732e758b3a4ecc47ce87c15"
+    },
+    {
+      "user_index": 168,
+      "user_id": 169,
+      "history_length": 200,
+      "input_sha256": "c20284f48a1ad5d5bb83b29680d7a36797894c5c29641e6a2ef738c84cdd4d72"
+    },
+    {
+      "user_index": 169,
+      "user_id": 170,
+      "history_length": 86,
+      "input_sha256": "840b6ebbca0fc9f4d6725d37a7a0aa073272d6780e90e113f4df3ccb6c4e8246"
+    },
+    {
+      "user_index": 170,
+      "user_id": 171,
+      "history_length": 23,
+      "input_sha256": "1ede733cd86b70bfa19fc56db712f807f375c1d1d96e31be24ba766455eda595"
+    },
+    {
+      "user_index": 171,
+      "user_id": 172,
+      "history_length": 22,
+      "input_sha256": "f77b6ff5c587f18896dbd229cbd663be256928038b23ed8a74fac797e9396b1c"
+    },
+    {
+      "user_index": 172,
+      "user_id": 173,
+      "history_length": 200,
+      "input_sha256": "7ec75e6ec2956a3061bb8f30e0a58d8dbe64fa2a82b238a68b9779688ff5ec22"
+    },
+    {
+      "user_index": 173,
+      "user_id": 174,
+      "history_length": 96,
+      "input_sha256": "de12f17932ad1e5bb05235c8d1a9c074db45f6266c78783c6142428b133dfcbe"
+    },
+    {
+      "user_index": 174,
+      "user_id": 175,
+      "history_length": 200,
+      "input_sha256": "714eefa751f8c0b4ce6ca5f36fa4b2de7593e13accd168e760577c0fe50cd661"
+    },
+    {
+      "user_index": 175,
+      "user_id": 176,
+      "history_length": 77,
+      "input_sha256": "ba8908b3bf9d0687de292d384eaf082269f4956348971415c34d2cd763b1d417"
+    },
+    {
+      "user_index": 176,
+      "user_id": 177,
+      "history_length": 43,
+      "input_sha256": "6a7a652a1c9c7b5675bdf3f71053bbd4e0366da9f7b1662dcdbeda037c9bb178"
+    },
+    {
+      "user_index": 177,
+      "user_id": 178,
+      "history_length": 114,
+      "input_sha256": "59f1dc28c880bc5350149c3e45a30b334c51588c50705e66426b84b2d9168931"
+    },
+    {
+      "user_index": 178,
+      "user_id": 179,
+      "history_length": 109,
+      "input_sha256": "3118e0d816e2f89c058296f4596f331ba4e5ced89654daf1b792698a8f25138f"
+    },
+    {
+      "user_index": 179,
+      "user_id": 180,
+      "history_length": 58,
+      "input_sha256": "ccd36fcc0102dc6f0e38753ff95ca75aa6ca48f1f6bf263013091a07d5ef203b"
+    },
+    {
+      "user_index": 180,
+      "user_id": 181,
+      "history_length": 200,
+      "input_sha256": "59fd91a2e1f8cc2858cac24b20d80baf0bf3c678f419bced2f1eb47cb0427e80"
+    },
+    {
+      "user_index": 181,
+      "user_id": 182,
+      "history_length": 82,
+      "input_sha256": "4e8cc0d6dde1a6a8243c1f80e4c15e2b6b5473d6c0e54d061e4958ae7bacbe47"
+    },
+    {
+      "user_index": 182,
+      "user_id": 183,
+      "history_length": 100,
+      "input_sha256": "380421f25f9455326167556d31087c363f6ee60c958a2422e209cd5ef91192cd"
+    },
+    {
+      "user_index": 183,
+      "user_id": 184,
+      "history_length": 83,
+      "input_sha256": "ecc3294ba3a54f6065eb034ae162543be883d98395a03ccb11e0a3e6124ff04f"
+    },
+    {
+      "user_index": 184,
+      "user_id": 185,
+      "history_length": 50,
+      "input_sha256": "613b24a78530388f6d8e199835437b45c23319c66ece7d0e10697d97defd67e0"
+    },
+    {
+      "user_index": 185,
+      "user_id": 186,
+      "history_length": 121,
+      "input_sha256": "a9142c584bc2b86af541cf9b760e1bc2c240379f1c1a9eed43eb9907e0e59230"
+    },
+    {
+      "user_index": 186,
+      "user_id": 187,
+      "history_length": 200,
+      "input_sha256": "dacef5aeae656abbe37c48578f1ca1483b84a83114526994e7bf7858155194b1"
+    },
+    {
+      "user_index": 187,
+      "user_id": 188,
+      "history_length": 70,
+      "input_sha256": "bd1e4d9271fe426173f7e9209ce2b0b4a0aaec480d38161c94118ba35f8f081e"
+    },
+    {
+      "user_index": 188,
+      "user_id": 189,
+      "history_length": 30,
+      "input_sha256": "02a865269a9d2801d2cc208aefa2db19d304932c42eace9c795c71998b3a60a4"
+    },
+    {
+      "user_index": 189,
+      "user_id": 190,
+      "history_length": 152,
+      "input_sha256": "4e1d6aadb16d340ec027eb04e8ad08e15d15d6534ee416c3a4d85d3dac9f5714"
+    },
+    {
+      "user_index": 190,
+      "user_id": 191,
+      "history_length": 29,
+      "input_sha256": "ca3e2537f5d8c35157b285e2f09d813148d27b7d263f8f3ddc32115fc5f18c56"
+    },
+    {
+      "user_index": 191,
+      "user_id": 192,
+      "history_length": 200,
+      "input_sha256": "deba1cd942ef0d8dc6d722172a0e89d31d664265e3908f7dadadb1b0d1de95d3"
+    },
+    {
+      "user_index": 192,
+      "user_id": 193,
+      "history_length": 200,
+      "input_sha256": "0d6360cf8870a41dffee5cbdc8ced81ecb64bc8ee3ac4ee7f8fbbbed1d82fc7d"
+    },
+    {
+      "user_index": 193,
+      "user_id": 194,
+      "history_length": 58,
+      "input_sha256": "3761a13183dad90cadf27c19ca74d5e55367c1a06ab6085539792d438384f8aa"
+    },
+    {
+      "user_index": 194,
+      "user_id": 195,
+      "history_length": 200,
+      "input_sha256": "6f4130d9aebe2c726c3c6e80226da24d0690587e989c82913637e001c8d34310"
+    },
+    {
+      "user_index": 195,
+      "user_id": 196,
+      "history_length": 31,
+      "input_sha256": "63775b1642ab2f9f6264fb6f74689598e0a00fdc1fcd14a6e9e674f50c99970b"
+    },
+    {
+      "user_index": 196,
+      "user_id": 197,
+      "history_length": 21,
+      "input_sha256": "c835051f975095a4e9f0625707bea1d7887ad789f8a2f4be0e84e751f8de6e61"
+    },
+    {
+      "user_index": 197,
+      "user_id": 198,
+      "history_length": 200,
+      "input_sha256": "4f5fb6f401c8b058edac5e40602a1df0b6747fb353d1f2479d0b8302e97f4a92"
+    },
+    {
+      "user_index": 198,
+      "user_id": 199,
+      "history_length": 200,
+      "input_sha256": "b6ea47be83588d00b1e41265a840955c2fd23631058334e3014d72a59c0f12f4"
+    },
+    {
+      "user_index": 199,
+      "user_id": 200,
+      "history_length": 25,
+      "input_sha256": "4dd7f435b05ec2e0e878789e94422435c9e0913e45e76983a0a514f08ed25997"
+    },
+    {
+      "user_index": 200,
+      "user_id": 201,
+      "history_length": 86,
+      "input_sha256": "48d6f07a8675266ec70bf0896c0180a6da6e44730fb2cc305f9c776ef0f883d4"
+    },
+    {
+      "user_index": 201,
+      "user_id": 202,
+      "history_length": 200,
+      "input_sha256": "0b851c055c23c93e689f67b52cdf844e11e2d09d281aa7789c7a857b79af67fc"
+    },
+    {
+      "user_index": 202,
+      "user_id": 203,
+      "history_length": 126,
+      "input_sha256": "39e5611326aba6e9f4cdc023c6f8d620b939b48dc66959f6ce3a441b4f58199c"
+    },
+    {
+      "user_index": 203,
+      "user_id": 204,
+      "history_length": 200,
+      "input_sha256": "921f0e908b929132bc62248ca62b68f460a2328b246bba2dd57cb896eb5140ba"
+    },
+    {
+      "user_index": 204,
+      "user_id": 205,
+      "history_length": 152,
+      "input_sha256": "3d6864ed961d52139e8a12b90e00fa32a6d17330cfa910fafa08d3c48181a951"
+    },
+    {
+      "user_index": 205,
+      "user_id": 206,
+      "history_length": 29,
+      "input_sha256": "d4a5173f4671c67ae5df06398b1148192e404b31f814351e1924cd4d41902040"
+    },
+    {
+      "user_index": 206,
+      "user_id": 207,
+      "history_length": 22,
+      "input_sha256": "5cfa45c35c60fa4cba42199af0e4cb3a6385aecc9a6ccbba556c9983a8917933"
+    },
+    {
+      "user_index": 207,
+      "user_id": 208,
+      "history_length": 183,
+      "input_sha256": "8b6159b06b6d14a46c89f0204fbd8d4b25d107e5e50fb5fba53369b3e711d47a"
+    },
+    {
+      "user_index": 208,
+      "user_id": 209,
+      "history_length": 24,
+      "input_sha256": "9c4a38c44697676a1df89777a7c999276b05502ad5066759197ce87fe1c302e4"
+    },
+    {
+      "user_index": 209,
+      "user_id": 210,
+      "history_length": 109,
+      "input_sha256": "9bdf199ec0106be391d8d268aafcc43d3f0fe85c2247ea7cb0face73dc9cf398"
+    },
+    {
+      "user_index": 210,
+      "user_id": 211,
+      "history_length": 34,
+      "input_sha256": "a2f4c7bdaf1c89810f5d6bdf57dd5c38ec425dc85ae659a6dc8a40fc8d967ab9"
+    },
+    {
+      "user_index": 211,
+      "user_id": 212,
+      "history_length": 109,
+      "input_sha256": "7aba0f5b3add589b757f7174f6ecb3b049b961c2ab7edec1b30b35ec1ceb7f6f"
+    },
+    {
+      "user_index": 212,
+      "user_id": 213,
+      "history_length": 21,
+      "input_sha256": "2023329b0f2d3effe34d468007d2df13b826cec8bebf04e09583336ff3b2466e"
+    },
+    {
+      "user_index": 213,
+      "user_id": 214,
+      "history_length": 165,
+      "input_sha256": "5890f0576838463f500599928485c5c261bdb68bf8e3237ef43d07d91afce61f"
+    },
+    {
+      "user_index": 214,
+      "user_id": 215,
+      "history_length": 33,
+      "input_sha256": "4793ccfcee27140c3d786b117c20efdceebcbec98cc56dfdc94756e2f63958c7"
+    },
+    {
+      "user_index": 215,
+      "user_id": 216,
+      "history_length": 200,
+      "input_sha256": "55aee9967b288be957a652ce0717298c156b468cd26155d59aeb8a1edb4ba1e2"
+    },
+    {
+      "user_index": 216,
+      "user_id": 217,
+      "history_length": 19,
+      "input_sha256": "8c08f304859a7c656ae73e886a5fc0c5b7570144407498661f25a5940774fb2b"
+    },
+    {
+      "user_index": 217,
+      "user_id": 218,
+      "history_length": 85,
+      "input_sha256": "7a2263cb5e8d827326357af45bb1cedd620d9e8bcfc8681c8a5400d167649230"
+    },
+    {
+      "user_index": 218,
+      "user_id": 219,
+      "history_length": 35,
+      "input_sha256": "5a72148f8d55b2393a08a2154e2f64fce5db11ff132022291413ffa1c34fca34"
+    },
+    {
+      "user_index": 219,
+      "user_id": 220,
+      "history_length": 101,
+      "input_sha256": "1f38b2bb8d833ac22577a72cd0e53d5191bf4a924a4ba749ba4e5dd6e6a6c758"
+    },
+    {
+      "user_index": 220,
+      "user_id": 221,
+      "history_length": 28,
+      "input_sha256": "a2d4f4f9095d36ed0ae2136a08f8294c4a32d25d1f0258f09c64d73f3472f4a7"
+    },
+    {
+      "user_index": 221,
+      "user_id": 222,
+      "history_length": 79,
+      "input_sha256": "1db2e3c03503f726ae5167ee52640fca9ae80eedd8cd10674039f00483eae851"
+    },
+    {
+      "user_index": 222,
+      "user_id": 223,
+      "history_length": 200,
+      "input_sha256": "7ebe379a2c409043d5378798258cb1e97278152e70c4778f3e4bde3e4b863003"
+    },
+    {
+      "user_index": 223,
+      "user_id": 224,
+      "history_length": 200,
+      "input_sha256": "8df62bee0842950d6bccd13b4bc3db8186651f5751d6a9d8af9ce65ff4f302eb"
+    },
+    {
+      "user_index": 224,
+      "user_id": 225,
+      "history_length": 200,
+      "input_sha256": "093c2ee542feea9c481034d6aff30d17c4faef1f9906ef9dfb610375d99d39af"
+    },
+    {
+      "user_index": 225,
+      "user_id": 226,
+      "history_length": 20,
+      "input_sha256": "f3c51136c16f157946aec1ed8355d14da4f59993325c2ae56328f280d5f99bf5"
+    },
+    {
+      "user_index": 226,
+      "user_id": 227,
+      "history_length": 27,
+      "input_sha256": "1c949f5246d8455e699d496c7801340decc4200195fe69150543293d5acbb3b3"
+    },
+    {
+      "user_index": 227,
+      "user_id": 228,
+      "history_length": 30,
+      "input_sha256": "b6fdd75fa665ee63c904c7322df99ecf3bfd28b33c8b16ebd6c84c375719e717"
+    },
+    {
+      "user_index": 228,
+      "user_id": 229,
+      "history_length": 200,
+      "input_sha256": "7b66b34877d74780cc49620429fca834495de038301764c5ff978d5772104822"
+    },
+    {
+      "user_index": 229,
+      "user_id": 230,
+      "history_length": 178,
+      "input_sha256": "29bd88889b5ae4d42f9932ddbb100d0e310b06134b3920ae237b0f59a99fa9a0"
+    },
+    {
+      "user_index": 230,
+      "user_id": 231,
+      "history_length": 96,
+      "input_sha256": "4351e0abc7d1ecf72e37b6b092cdfb91a5616b20f5138de7ed107083e602e812"
+    },
+    {
+      "user_index": 231,
+      "user_id": 232,
+      "history_length": 89,
+      "input_sha256": "4ab4538c9acae2330c27d757332076dcf83ca679a59a029b582158be4a1c77df"
+    },
+    {
+      "user_index": 232,
+      "user_id": 233,
+      "history_length": 52,
+      "input_sha256": "f55200084b5c0ddf10d54c33c2df58de491144587e23a86cf8261416059de350"
+    },
+    {
+      "user_index": 233,
+      "user_id": 234,
+      "history_length": 28,
+      "input_sha256": "f708e1af3f5eae69748d898c9ccd3c6d8a01432faee12e913f6cd3e5a681099b"
+    },
+    {
+      "user_index": 234,
+      "user_id": 235,
+      "history_length": 200,
+      "input_sha256": "2466dd0c208f41a85c71e95d65a4874440da186889ddf4787cc74c9f2dc53f8a"
+    },
+    {
+      "user_index": 235,
+      "user_id": 236,
+      "history_length": 61,
+      "input_sha256": "ae3dedf3ad083ec76d692243ebd7e11e31e9179c3557f7c0fe848e581e267bc2"
+    },
+    {
+      "user_index": 236,
+      "user_id": 237,
+      "history_length": 165,
+      "input_sha256": "4d7ec48bc8bd7c0d5d8510fcf5710369bbdd68ac5f623d0b830651e65ef45b39"
+    },
+    {
+      "user_index": 237,
+      "user_id": 238,
+      "history_length": 200,
+      "input_sha256": "e91c546e686c08ee1aba17da536c358de2ae7a146cb9a013581e918ee918bba4"
+    },
+    {
+      "user_index": 238,
+      "user_id": 239,
+      "history_length": 70,
+      "input_sha256": "08e42cf11068fc98257e0b22318b0accfbce15554a9c19502c48fa1ac40b77f5"
+    },
+    {
+      "user_index": 239,
+      "user_id": 240,
+      "history_length": 142,
+      "input_sha256": "923faa8fb3cd00a4b4a80df179e89657c86f40602d4b8cdcdea04a0f69ae6e5c"
+    },
+    {
+      "user_index": 240,
+      "user_id": 241,
+      "history_length": 56,
+      "input_sha256": "2ff824eb7b31ffaa186e6b371ed8c0f145b6ac9121114c5e17f836bee17029dc"
+    },
+    {
+      "user_index": 241,
+      "user_id": 242,
+      "history_length": 200,
+      "input_sha256": "baa0022396aa5db79903b686fc8eee19dd4bf74a42a0a9adc8130af755772178"
+    },
+    {
+      "user_index": 242,
+      "user_id": 243,
+      "history_length": 32,
+      "input_sha256": "baa7265cc1c88f5db682edf0f15029e5819581ee7fb0930ef4f3c6ad91355d6d"
+    },
+    {
+      "user_index": 243,
+      "user_id": 244,
+      "history_length": 84,
+      "input_sha256": "74f2ae0d64e2fecab3128d92a9b943f36156bb4b45493294ae251485891ea3f4"
+    },
+    {
+      "user_index": 244,
+      "user_id": 245,
+      "history_length": 200,
+      "input_sha256": "81b8f12c4c11eef7b063c1bf0c90723749337bcae1ebd99e58fa57df6fa5bcf1"
+    },
+    {
+      "user_index": 245,
+      "user_id": 246,
+      "history_length": 28,
+      "input_sha256": "363e04dc03127eae72696e5733bd9897e639e423e6301cae4046882ad2a7ef6d"
+    },
+    {
+      "user_index": 246,
+      "user_id": 247,
+      "history_length": 30,
+      "input_sha256": "e96abc70d02c98f6558714789043311fc7dd2c841d462d9a658f85829a85d894"
+    },
+    {
+      "user_index": 247,
+      "user_id": 248,
+      "history_length": 33,
+      "input_sha256": "634b068ecab6f62e32a9f7d23d3a97e54782af0bba3fb7e06a2ec48a1fca28d5"
+    },
+    {
+      "user_index": 248,
+      "user_id": 249,
+      "history_length": 109,
+      "input_sha256": "61a4f964f039a1f98d0766b3ace7c9e42a50198341336beecf258319acf2e053"
+    },
+    {
+      "user_index": 249,
+      "user_id": 250,
+      "history_length": 19,
+      "input_sha256": "a460fe40ae27868c014ed84a59b9df7cba6616cee4a7a9fa5a3934fc6a0464a3"
+    },
+    {
+      "user_index": 250,
+      "user_id": 251,
+      "history_length": 72,
+      "input_sha256": "5d0947a038b595a4fb798e83e7f0b912a900ec5a118d27008725add40f32849f"
+    },
+    {
+      "user_index": 251,
+      "user_id": 252,
+      "history_length": 59,
+      "input_sha256": "4824d3f5270cd1de1df7efbca5af450844a50fcc0068c5653bb8abe3020a7a71"
+    },
+    {
+      "user_index": 252,
+      "user_id": 253,
+      "history_length": 52,
+      "input_sha256": "b09b8b87f573ecbbd86a07f567f8356dd9d6c458f6f81a88851eebc41372fa2e"
+    },
+    {
+      "user_index": 253,
+      "user_id": 254,
+      "history_length": 22,
+      "input_sha256": "ff80846a1baa2ea7bf8347db3b6ea3d1eb8fef784c5a175cae8feb54bbfc99c0"
+    },
+    {
+      "user_index": 254,
+      "user_id": 255,
+      "history_length": 200,
+      "input_sha256": "341c04d45f9a525b9271d7929cebd383b6124481f4499fd2ace83d9fc5f3c62f"
+    },
+    {
+      "user_index": 255,
+      "user_id": 256,
+      "history_length": 94,
+      "input_sha256": "dc483be42009df65ee58e2c24a4e9cc1d21239b7b951c03dfd170ec642823aca"
+    },
+    {
+      "user_index": 256,
+      "user_id": 257,
+      "history_length": 52,
+      "input_sha256": "67c012e3fcacfd73bec2f22f133d8a33acaa0d74a3320261c4b502ec0506f71f"
+    },
+    {
+      "user_index": 257,
+      "user_id": 258,
+      "history_length": 144,
+      "input_sha256": "5643a0aaaeac7f5dd6bdcd194635f82581532aea4dd547570f3d0964f945c65d"
+    },
+    {
+      "user_index": 258,
+      "user_id": 259,
+      "history_length": 138,
+      "input_sha256": "b163ceab8707fcf9fc9990b2251470e2465fc0f330fc695ae0b815b10bc0a8aa"
+    },
+    {
+      "user_index": 259,
+      "user_id": 260,
+      "history_length": 153,
+      "input_sha256": "860abc622c7f72c58ca0c7a5780f51072864c0d0ff93edc9b6019ee7028ed2d8"
+    },
+    {
+      "user_index": 260,
+      "user_id": 261,
+      "history_length": 200,
+      "input_sha256": "cc642c4d301439b5c5bb321f67eff919e2d0fa97b8688bf1b598a5468dcbff96"
+    },
+    {
+      "user_index": 261,
+      "user_id": 262,
+      "history_length": 105,
+      "input_sha256": "bcc0a0d9eb8042a3a7d31b5c292388e387ca12e73049e27899f30fb142917000"
+    },
+    {
+      "user_index": 262,
+      "user_id": 263,
+      "history_length": 91,
+      "input_sha256": "8c3cc4fe83d67aa0fc01eca2ba1115d4e2ec43ca2b03798a7081507305bf891a"
+    },
+    {
+      "user_index": 263,
+      "user_id": 264,
+      "history_length": 200,
+      "input_sha256": "6446c143f9fd9e0d8e60cc3eb64318115d878b8258373cb2719b4f793096e08e"
+    },
+    {
+      "user_index": 264,
+      "user_id": 265,
+      "history_length": 97,
+      "input_sha256": "d46814151e88bc2eba94a81588243d647a313ffa59f88f9519409e3c3f9c4d36"
+    },
+    {
+      "user_index": 265,
+      "user_id": 266,
+      "history_length": 49,
+      "input_sha256": "87463cf459a7bf91ded19d6644864557fbee885c50a4f8908dc91c60e9a0be7b"
+    },
+    {
+      "user_index": 266,
+      "user_id": 267,
+      "history_length": 130,
+      "input_sha256": "238a78bfcdbe5d47243634e705140c4d6d3657db9ab878c1c296b5f13df9b8a5"
+    },
+    {
+      "user_index": 267,
+      "user_id": 268,
+      "history_length": 200,
+      "input_sha256": "ed49fa16e27667098c315ab79f5c0ee8899a83548cbc52d56bc3a89cacbe10b5"
+    },
+    {
+      "user_index": 268,
+      "user_id": 269,
+      "history_length": 29,
+      "input_sha256": "4a38e8a877d93d72ce60183e0ae72060d0cd7ee1488b1d5e7471760c5dc3cdd5"
+    },
+    {
+      "user_index": 269,
+      "user_id": 270,
+      "history_length": 125,
+      "input_sha256": "885fdac55d7b5d196ff54d73bc0bcf497225c91778051342153220e35c645deb"
+    },
+    {
+      "user_index": 270,
+      "user_id": 271,
+      "history_length": 200,
+      "input_sha256": "8ad25ed1433d126af37694b8d9abfa40f14ad6a33748a10114aa0dd8121d2a4e"
+    },
+    {
+      "user_index": 271,
+      "user_id": 272,
+      "history_length": 200,
+      "input_sha256": "79dc5e27e34d12de5b41c40b392ae287cd7cae509a76b79c313a1fe08e8610c7"
+    },
+    {
+      "user_index": 272,
+      "user_id": 273,
+      "history_length": 186,
+      "input_sha256": "aa5d663da5c74d5f1042039f6d6300cdfc806deabd6623e616b71c319aa9a807"
+    },
+    {
+      "user_index": 273,
+      "user_id": 274,
+      "history_length": 147,
+      "input_sha256": "679bc7fd3054e11ebe0c1535dfeba42d39f8cd6efa44e6eff377bca3796edcc2"
+    },
+    {
+      "user_index": 274,
+      "user_id": 275,
+      "history_length": 88,
+      "input_sha256": "bc81c660eab6e8fea510abb4e5810ecfd41f6e82ae5fc6142a77af4cfb3cbc15"
+    },
+    {
+      "user_index": 275,
+      "user_id": 276,
+      "history_length": 22,
+      "input_sha256": "85aa45585b1998979a8361c70cf75fc87bd2faa9095444d2fe450804519719a8"
+    },
+    {
+      "user_index": 276,
+      "user_id": 277,
+      "history_length": 21,
+      "input_sha256": "8925ec1610b9db869d7841624fbbe504dafb0d3da90c5323b1ddb61a78d0c342"
+    },
+    {
+      "user_index": 277,
+      "user_id": 278,
+      "history_length": 197,
+      "input_sha256": "0dc048cf02506d91dd932a7f6fb8db82c5d871e95ae67101fb0744076ed125a3"
+    },
+    {
+      "user_index": 278,
+      "user_id": 279,
+      "history_length": 46,
+      "input_sha256": "570a7003c9ad527cf5632c9d8edfa939d9098e2d1977ec261b595efaa69631e0"
+    },
+    {
+      "user_index": 279,
+      "user_id": 280,
+      "history_length": 49,
+      "input_sha256": "d8de8974babc164db8726ad008e53405f200599f0dec082e4bcd89be2326ce08"
+    },
+    {
+      "user_index": 280,
+      "user_id": 281,
+      "history_length": 110,
+      "input_sha256": "336824fce65f355c60a57a15b8053b6b1e53d2bf99ac49bb6aea52baf421ba4a"
+    },
+    {
+      "user_index": 281,
+      "user_id": 282,
+      "history_length": 28,
+      "input_sha256": "b4b834e167120f3a62a4c9912456b3458a68eb4fe84ea3c948dc4d23fc39adb1"
+    },
+    {
+      "user_index": 282,
+      "user_id": 283,
+      "history_length": 26,
+      "input_sha256": "63ea156ee80c92e8c2e6e7866fcd6c9c0e073b72c5b1e62e58557d9de59a0f83"
+    },
+    {
+      "user_index": 283,
+      "user_id": 284,
+      "history_length": 200,
+      "input_sha256": "4c64e55dfcd14a81dd3691a324b604ce34553e7d2fded7eb32febe1b4831010a"
+    },
+    {
+      "user_index": 284,
+      "user_id": 285,
+      "history_length": 138,
+      "input_sha256": "0541f77520bf8b98576ad5048a5d0621929ba79af99b0d0f7be048695b110cf1"
+    },
+    {
+      "user_index": 285,
+      "user_id": 286,
+      "history_length": 42,
+      "input_sha256": "c35b9cde133cb2c685c9394bd6171362a42a499e0ab6b26b7915e5f3b823aae9"
+    },
+    {
+      "user_index": 286,
+      "user_id": 287,
+      "history_length": 102,
+      "input_sha256": "6adb6399df2705c27efdd04c88c8c7cb3071d51c23837ca5c57cd9a01eff8520"
+    },
+    {
+      "user_index": 287,
+      "user_id": 288,
+      "history_length": 55,
+      "input_sha256": "2e64629bdb722402c82d5549a561eddeb6722d708fc004f5abfcdd2fcdfd3a56"
+    },
+    {
+      "user_index": 288,
+      "user_id": 289,
+      "history_length": 73,
+      "input_sha256": "4e416412ae034a989b80ffdd504b7640e24bc972ace69a1bc75a9a49d7e89eb0"
+    },
+    {
+      "user_index": 289,
+      "user_id": 290,
+      "history_length": 32,
+      "input_sha256": "9375d7f2c90895375c1aa66c478a12a3afa736be28a59fbabc34a3d9c310f976"
+    },
+    {
+      "user_index": 290,
+      "user_id": 291,
+      "history_length": 101,
+      "input_sha256": "aaceef7e016553e7ef012163a01fdc8bc615145e7cc489a8a3b8b0007fe18388"
+    },
+    {
+      "user_index": 291,
+      "user_id": 292,
+      "history_length": 40,
+      "input_sha256": "2e23f819dd3d053c1fd9ffc24c5846c99bf47d16a07aabdcdc56cf28dda96ce8"
+    },
+    {
+      "user_index": 292,
+      "user_id": 293,
+      "history_length": 200,
+      "input_sha256": "934b053ca29dd0714e3c30d55757d33d4a5f282434367749c86c94bf1be51db9"
+    },
+    {
+      "user_index": 293,
+      "user_id": 294,
+      "history_length": 48,
+      "input_sha256": "da7d25139ddfaaaf3d7a2f13b4ba68f3b6d52e11db5bfe8a200be6bf6f49fab8"
+    },
+    {
+      "user_index": 294,
+      "user_id": 295,
+      "history_length": 190,
+      "input_sha256": "aa97601f90a710d627fce55eefc2ea372aafd14658936f0b880649bdfb275df0"
+    },
+    {
+      "user_index": 295,
+      "user_id": 296,
+      "history_length": 96,
+      "input_sha256": "f8faccc7e803136d404e159a2399294fc339a2e6ff04598a3152202ab4720d3f"
+    },
+    {
+      "user_index": 296,
+      "user_id": 297,
+      "history_length": 88,
+      "input_sha256": "5336570b407695f2968d10db8daa7e4dc58cc630c267d90b1c770190ca408070"
+    },
+    {
+      "user_index": 297,
+      "user_id": 298,
+      "history_length": 26,
+      "input_sha256": "7a39b0f113c9c11b4a0f19437810347e92e62b164553429b6cc42911a4697294"
+    },
+    {
+      "user_index": 298,
+      "user_id": 299,
+      "history_length": 103,
+      "input_sha256": "429a4d27387ea689e3efdd3feb7812318d54582fb66f857bdf02e614b94a4424"
+    },
+    {
+      "user_index": 299,
+      "user_id": 300,
+      "history_length": 200,
+      "input_sha256": "7ff9a2f6e3e3bd4c173dbcc505fd7713fce723647b41e64b632a98108a96692f"
+    },
+    {
+      "user_index": 300,
+      "user_id": 301,
+      "history_length": 200,
+      "input_sha256": "5d0bc08d4b94a0aad24202baba58d59f9491ca47e0093b78a09e914104c4f831"
+    },
+    {
+      "user_index": 301,
+      "user_id": 302,
+      "history_length": 200,
+      "input_sha256": "c43fb29a4fb56d7202b807bdecf7ebfda9d96dd96b88d48cce27ca4070b1d603"
+    },
+    {
+      "user_index": 302,
+      "user_id": 303,
+      "history_length": 200,
+      "input_sha256": "49dab9c497e267646fb78d3f8a5def3cae4a3f8ed8345919684db1dff63e8acc"
+    },
+    {
+      "user_index": 303,
+      "user_id": 304,
+      "history_length": 26,
+      "input_sha256": "39ce1713b5a4bd78de52eef76dfa92ea43f2dd5fbec80f6be8e67bbbe2eff4a1"
+    },
+    {
+      "user_index": 304,
+      "user_id": 305,
+      "history_length": 156,
+      "input_sha256": "2c20630331bd043eeadc749cb97688108413d45f1106b9d897b67e5b3e9cf3b9"
+    },
+    {
+      "user_index": 305,
+      "user_id": 306,
+      "history_length": 192,
+      "input_sha256": "3023edaf4269ccb4ebd42dfc40ae127f6fd4611f66365a18a1a4945b0aaca6ba"
+    },
+    {
+      "user_index": 306,
+      "user_id": 307,
+      "history_length": 181,
+      "input_sha256": "579310abf549281d6ef40a278fb2f036c9193b2b0d6ac964761ede0508193de0"
+    },
+    {
+      "user_index": 307,
+      "user_id": 308,
+      "history_length": 200,
+      "input_sha256": "9c6e98b75f78983ac5b14c6ac0955f08ad524929acd9eb2631da41af353bfbbc"
+    },
+    {
+      "user_index": 308,
+      "user_id": 309,
+      "history_length": 122,
+      "input_sha256": "308caa27e12da59a5b775c84114dcb2f361bae15d9edcd60b49617d9a0b5b7dc"
+    },
+    {
+      "user_index": 309,
+      "user_id": 310,
+      "history_length": 200,
+      "input_sha256": "e9144ec803afe4926b1eb19ad884618975f16e75b4f22cab56dee2848467d0c5"
+    },
+    {
+      "user_index": 310,
+      "user_id": 311,
+      "history_length": 19,
+      "input_sha256": "b0b10b33461e049047fc64844e678ea50fa1e107419d77c7b46d201b8c6973f6"
+    },
+    {
+      "user_index": 311,
+      "user_id": 312,
+      "history_length": 56,
+      "input_sha256": "a6c5902af4505118e541e195611b7c21fe4ba58072d954d7edc82cc0653ef8a7"
+    },
+    {
+      "user_index": 312,
+      "user_id": 313,
+      "history_length": 25,
+      "input_sha256": "e88c9614a52e96c0f8bbd6188bf276cbd2a350cb9751bbad5e3743ba5fbb71a2"
+    },
+    {
+      "user_index": 313,
+      "user_id": 314,
+      "history_length": 200,
+      "input_sha256": "c05a7d00f03292b9675ae07b6c589f7468a2526bdafc9503a0aa90b1e4fc9045"
+    },
+    {
+      "user_index": 314,
+      "user_id": 315,
+      "history_length": 21,
+      "input_sha256": "ae0044085245282f5e2e421fffc414becc9e132f132ea70554d477d494222aed"
+    },
+    {
+      "user_index": 315,
+      "user_id": 316,
+      "history_length": 76,
+      "input_sha256": "29198a2e4adb0c8719f4d54389dff33fa0a112913bba88650ca126762954d742"
+    },
+    {
+      "user_index": 316,
+      "user_id": 317,
+      "history_length": 20,
+      "input_sha256": "d6fc5699c4abf2a5253cfaea8c9d7d8a76e08834573e28f0434a3e8447272f5a"
+    },
+    {
+      "user_index": 317,
+      "user_id": 318,
+      "history_length": 20,
+      "input_sha256": "e10ee16c444bf8cc0674520219f42d8b20244ac1453a83b9a77aed8c401fc55b"
+    },
+    {
+      "user_index": 318,
+      "user_id": 319,
+      "history_length": 200,
+      "input_sha256": "616ec3482e0c8696b52bc2420710cf0379c41798728644302b1a5e73b4a57199"
+    },
+    {
+      "user_index": 319,
+      "user_id": 320,
+      "history_length": 20,
+      "input_sha256": "7d455bcbdd9d5857b163694e48064aa6277bb023bb57fcec8a897ac8e464b6cd"
+    },
+    {
+      "user_index": 320,
+      "user_id": 321,
+      "history_length": 200,
+      "input_sha256": "c38f39e79e5aa8e3836722827ce16510cf1473101b3bc949b8aaeb47302b8aa3"
+    },
+    {
+      "user_index": 321,
+      "user_id": 322,
+      "history_length": 39,
+      "input_sha256": "f0d6cefc50f95a014d937e5c87428c842c42a25f7884a6163a75241d17419a52"
+    },
+    {
+      "user_index": 322,
+      "user_id": 323,
+      "history_length": 117,
+      "input_sha256": "0b3166cfdde65a944c80243cc605e1b8e35de3f2348c448482f0d8eac29398f8"
+    },
+    {
+      "user_index": 323,
+      "user_id": 324,
+      "history_length": 75,
+      "input_sha256": "94265ebe9405091c613de5bf15c7c95ce247da05e9c5905ba20d6a04c162694e"
+    },
+    {
+      "user_index": 324,
+      "user_id": 325,
+      "history_length": 42,
+      "input_sha256": "af3c19bb3685f3d3ea4d4d240481f607ed81e02a7827bdd5a6ad09b3ea891ab8"
+    },
+    {
+      "user_index": 325,
+      "user_id": 326,
+      "history_length": 200,
+      "input_sha256": "2983d7670e07fb056303d0c07bec7a9f70d5c6aa52bc5eb540405bde85bf87c5"
+    },
+    {
+      "user_index": 326,
+      "user_id": 327,
+      "history_length": 200,
+      "input_sha256": "ef94fbe0674fff13866c784be258b094e771ca22ed3f9cebc9396e968e3cccc0"
+    },
+    {
+      "user_index": 327,
+      "user_id": 328,
+      "history_length": 61,
+      "input_sha256": "3934345e8fd702c0b7ffa9fb8a71d0d72b9f1d2ff6bfc0135ab4b533ffcc8367"
+    },
+    {
+      "user_index": 328,
+      "user_id": 329,
+      "history_length": 200,
+      "input_sha256": "bbdd2df809693479934b94e476ac69dbc00c9b660db7179face09c9d8a813bcc"
+    },
+    {
+      "user_index": 329,
+      "user_id": 330,
+      "history_length": 75,
+      "input_sha256": "f7689d9fa7f34a09765a2e68fa3d53321730c713fba809c6f9d85daf34a10066"
+    },
+    {
+      "user_index": 330,
+      "user_id": 331,
+      "history_length": 200,
+      "input_sha256": "123e49e96e4dcc8648e67104a7b91953fd5c0b359da5057965d6dd15b9aad1dd"
+    },
+    {
+      "user_index": 331,
+      "user_id": 332,
+      "history_length": 66,
+      "input_sha256": "3566277b76b1c2766d163e9a9ed249f81b8cfe9f8dfa3ccdefce7c3a5d051da1"
+    },
+    {
+      "user_index": 332,
+      "user_id": 333,
+      "history_length": 200,
+      "input_sha256": "8392d9db5a0adaaf6478b7495feb6522e5a96ee9b042e41030ba5755c844f4ac"
+    },
+    {
+      "user_index": 333,
+      "user_id": 334,
+      "history_length": 60,
+      "input_sha256": "bfb7f264475adc1b6eed99278f752c2f12ed12a5c163ea2fda2ee3a8b28fec1a"
+    },
+    {
+      "user_index": 334,
+      "user_id": 335,
+      "history_length": 147,
+      "input_sha256": "1ed09b9bd773e27da2e1324fe70893a3411f5701dd9d25b559efe6250546d1fd"
+    },
+    {
+      "user_index": 335,
+      "user_id": 336,
+      "history_length": 106,
+      "input_sha256": "47cfb91681d3a8aa91e17196f05f77baf36172d73353356d4eef53eede0b3f48"
+    },
+    {
+      "user_index": 336,
+      "user_id": 337,
+      "history_length": 197,
+      "input_sha256": "15cd1e9d30614885ddda21ecbf91d4a5c29e45b64f8d3112f5f27c012db5619c"
+    },
+    {
+      "user_index": 337,
+      "user_id": 338,
+      "history_length": 200,
+      "input_sha256": "86f73f073d01d97034dc8f4ca19f9a7a181ccbb93709c87c8cb0c34da20abc31"
+    },
+    {
+      "user_index": 338,
+      "user_id": 339,
+      "history_length": 123,
+      "input_sha256": "836d22152c6ed8e6e0613e873a3c6acf822e4f749ab9a1cd809440603da8e65b"
+    },
+    {
+      "user_index": 339,
+      "user_id": 340,
+      "history_length": 107,
+      "input_sha256": "a14675e12c4f65c6a06c0b4eab3b4f7efb3c86c424420018bc46f0bd325e5fa4"
+    },
+    {
+      "user_index": 340,
+      "user_id": 341,
+      "history_length": 19,
+      "input_sha256": "2d40eeb12559550e044daeaa0b97f96c4104c89740022189013ed6fb94eedc18"
+    },
+    {
+      "user_index": 341,
+      "user_id": 342,
+      "history_length": 122,
+      "input_sha256": "085e51044357f5fe56e7ffd783e81faee13ee02a169a73123ade9469deab55eb"
+    },
+    {
+      "user_index": 342,
+      "user_id": 343,
+      "history_length": 200,
+      "input_sha256": "b1cbf89347c2a18e04012fb6eccfceee883ebea769fd7390d2b7f40ba00ee261"
+    },
+    {
+      "user_index": 343,
+      "user_id": 344,
+      "history_length": 89,
+      "input_sha256": "500acc9446c4e0a1e4b22549be6dbab76943314e580d05062080f8e54cd85035"
+    },
+    {
+      "user_index": 344,
+      "user_id": 345,
+      "history_length": 24,
+      "input_sha256": "55d49e7f33631057ebc1a6245017048913b775be0da3306f0633eb710e88e25f"
+    },
+    {
+      "user_index": 345,
+      "user_id": 346,
+      "history_length": 200,
+      "input_sha256": "753015e44a5872d09df0b9defec074c168de8d4054783f3fcb1198e961c2d530"
+    },
+    {
+      "user_index": 346,
+      "user_id": 347,
+      "history_length": 98,
+      "input_sha256": "a71725e1159e3a80b13f952ebaa41a96e2241157c407f4975a06acd8709da97b"
+    },
+    {
+      "user_index": 347,
+      "user_id": 348,
+      "history_length": 99,
+      "input_sha256": "d1fefcdac0fb5824a9fe5036bb989fbb1f0d71a4b0b3cdbf07c46c5af0e8b764"
+    },
+    {
+      "user_index": 348,
+      "user_id": 349,
+      "history_length": 200,
+      "input_sha256": "2bc3d57536b5117dabb2deac1b92422107ddba7555e8e7a33770f869d1a4d028"
+    },
+    {
+      "user_index": 349,
+      "user_id": 350,
+      "history_length": 63,
+      "input_sha256": "d87b384b8e75e4ed33ade1015e83a8ac60eb631cc5fa97b043e46c0cc5b439d0"
+    },
+    {
+      "user_index": 350,
+      "user_id": 351,
+      "history_length": 102,
+      "input_sha256": "ff032f31f53e65f2d3d67eaef98ef6dbc6c4ef98202c5f7d102c96af833851f3"
+    },
+    {
+      "user_index": 351,
+      "user_id": 352,
+      "history_length": 200,
+      "input_sha256": "8f661e24ab1b98a623a5b079c24959f75b9513c57c1bbbbf2fa66517a311e827"
+    },
+    {
+      "user_index": 352,
+      "user_id": 353,
+      "history_length": 23,
+      "input_sha256": "3d7cec00af6617b4b25cc420d61e3aef46e8d11bfe50b35dc4442bfbb9c05541"
+    },
+    {
+      "user_index": 353,
+      "user_id": 354,
+      "history_length": 57,
+      "input_sha256": "9b94cba5c1be520bad5eadb6e9e665a32ec8df1fb4f44cebfbf6bd1717460048"
+    },
+    {
+      "user_index": 354,
+      "user_id": 355,
+      "history_length": 200,
+      "input_sha256": "bc5883d9dd572e8ad5f2b51404ed3f2bd9d3ed55b0db28e545e579c048561f35"
+    },
+    {
+      "user_index": 355,
+      "user_id": 356,
+      "history_length": 20,
+      "input_sha256": "fe7316a1fc17f07e488232c61a325ec737b65d1c16960b40c2ac8dd6ef7feffc"
+    },
+    {
+      "user_index": 356,
+      "user_id": 357,
+      "history_length": 57,
+      "input_sha256": "0472a1b1e0ff394b83c996416f1c86f2c385f9b298c7f8327fca26bec6129ea6"
+    },
+    {
+      "user_index": 357,
+      "user_id": 358,
+      "history_length": 71,
+      "input_sha256": "cc4621da64f202da57f8c3ba3c7a86fae092268e9fb684016f4c90b8cb275aae"
+    },
+    {
+      "user_index": 358,
+      "user_id": 359,
+      "history_length": 48,
+      "input_sha256": "aad84a01757bbad4b6aa82a1151bb46000838cd3f818155ed2a71fbc3bdb81a4"
+    },
+    {
+      "user_index": 359,
+      "user_id": 360,
+      "history_length": 66,
+      "input_sha256": "160eb877d1cf0ae38f95570c4114406fb2ffb00daf8681cfbfcd64cbede55ca2"
+    },
+    {
+      "user_index": 360,
+      "user_id": 361,
+      "history_length": 25,
+      "input_sha256": "1fc9091ee873ed680a5812391e604494a1a1c9e28ce83d061076b7de141c041f"
+    },
+    {
+      "user_index": 361,
+      "user_id": 362,
+      "history_length": 54,
+      "input_sha256": "0544bd86869ea5088bc40a1b5f2c49555d29321ec7188701cf8e794be8d5b51e"
+    },
+    {
+      "user_index": 362,
+      "user_id": 363,
+      "history_length": 42,
+      "input_sha256": "edb635f1ac2f509994ae341d93e4f16d60e4ff6afaa2321b521ff718abea7176"
+    },
+    {
+      "user_index": 363,
+      "user_id": 364,
+      "history_length": 27,
+      "input_sha256": "082fa7eb554d8e4e554e209dd07a0e415888f7202731d1b8626478131f3d76a2"
+    },
+    {
+      "user_index": 364,
+      "user_id": 365,
+      "history_length": 46,
+      "input_sha256": "bae2010c138fcbccdba3fb035914155fb055dbb815f04daa6212ea19836a52be"
+    },
+    {
+      "user_index": 365,
+      "user_id": 366,
+      "history_length": 200,
+      "input_sha256": "1e84dc00af4698f013043c4f793333cbf7dad45b2a117584b81bd0764968cd3f"
+    },
+    {
+      "user_index": 366,
+      "user_id": 367,
+      "history_length": 27,
+      "input_sha256": "943df10f89233f4916a9b2d2dcd9cabd91f4b58552fcfccbdd79c98aad197a7c"
+    },
+    {
+      "user_index": 367,
+      "user_id": 368,
+      "history_length": 200,
+      "input_sha256": "7a837a4e4303db1655cafb1ef082919e08eb326988b3b4005600340e76111d6d"
+    },
+    {
+      "user_index": 368,
+      "user_id": 369,
+      "history_length": 86,
+      "input_sha256": "bf41bd76997a9c429b4fb9a1de7d1f2872881b6c6e1cfae47076cadc0b54a9e9"
+    },
+    {
+      "user_index": 369,
+      "user_id": 370,
+      "history_length": 59,
+      "input_sha256": "e78bb47a3776362e14a6c9aefc56cf92dd46456266a79861765ab56e22d10396"
+    },
+    {
+      "user_index": 370,
+      "user_id": 371,
+      "history_length": 77,
+      "input_sha256": "61b28b037eb0fa9d18830f87f924d8838fd52d0564c3025ba0a266f7fbe2d0ee"
+    },
+    {
+      "user_index": 371,
+      "user_id": 372,
+      "history_length": 167,
+      "input_sha256": "8c39425debcf473e2365ce697f8c2f8b6e241366356c2098400e712a9d21a382"
+    },
+    {
+      "user_index": 372,
+      "user_id": 373,
+      "history_length": 26,
+      "input_sha256": "e6973b2c76432fd96a2058461b87a8edf18304c07d96d7663ce5421f00823184"
+    },
+    {
+      "user_index": 373,
+      "user_id": 374,
+      "history_length": 51,
+      "input_sha256": "745d8aa55c5e4a7952f375902c3b1a66424eb38be034c04714a04e619aee0c01"
+    },
+    {
+      "user_index": 374,
+      "user_id": 375,
+      "history_length": 50,
+      "input_sha256": "5849faa82142b3fbb7bfe2ba36ded018b409b0eb0982d15fcd8c7832291014d9"
+    },
+    {
+      "user_index": 375,
+      "user_id": 376,
+      "history_length": 116,
+      "input_sha256": "b0c850844bc29a284e825856b956de64ca8ddf3cbab2ecf6f9b11a355957d7c9"
+    },
+    {
+      "user_index": 376,
+      "user_id": 377,
+      "history_length": 135,
+      "input_sha256": "5cbae1a78e0011fe1a96cb3933d07175ca078972d641e0565d1a3aee168340dd"
+    },
+    {
+      "user_index": 377,
+      "user_id": 378,
+      "history_length": 38,
+      "input_sha256": "da6446aae59cd05d9cf4aeccf81ead80b9a5d4d2f3a9a5bc455363eb99a21ae6"
+    },
+    {
+      "user_index": 378,
+      "user_id": 379,
+      "history_length": 63,
+      "input_sha256": "e10ef208956ee85ff282a2916d6977386f941d33ecd19ebdd7223773e3f414ef"
+    },
+    {
+      "user_index": 379,
+      "user_id": 380,
+      "history_length": 137,
+      "input_sha256": "24e7b04b34af480a9e005887a0440d6293a7f3c11d7b58bab3d2ad79317cff05"
+    },
+    {
+      "user_index": 380,
+      "user_id": 381,
+      "history_length": 34,
+      "input_sha256": "aab8c309edc7e12722b0cef2a506a3009ffb53fa6b1f3fbe2626e33599b537a1"
+    },
+    {
+      "user_index": 381,
+      "user_id": 382,
+      "history_length": 55,
+      "input_sha256": "a3b151c3683adea8795ddeeb7862701dfedcceb9021fb5644d475f61abdfa3ab"
+    },
+    {
+      "user_index": 382,
+      "user_id": 383,
+      "history_length": 20,
+      "input_sha256": "7778619a1fcf9732e35a26d4ce7319bbaafef3ea920ff3f973e85df4efcd4d4b"
+    },
+    {
+      "user_index": 383,
+      "user_id": 384,
+      "history_length": 21,
+      "input_sha256": "b6da249af878fa47cab8466f9500d70b626d68c0d58e146c5e2883901b5bfb82"
+    },
+    {
+      "user_index": 384,
+      "user_id": 385,
+      "history_length": 136,
+      "input_sha256": "6014612f5cdf5fa15be8918a01815949b023d3792a4ee5cf7e361743c63430e8"
+    },
+    {
+      "user_index": 385,
+      "user_id": 386,
+      "history_length": 200,
+      "input_sha256": "a10d73c84155f93578659e8c349babae9280beb2c1c28abdfaed89228b1bdd5d"
+    },
+    {
+      "user_index": 386,
+      "user_id": 387,
+      "history_length": 67,
+      "input_sha256": "dfe3531df99ef958c2b0e2173ddb8ae702f2704393f4d0d42c35efb06cbcf3d9"
+    },
+    {
+      "user_index": 387,
+      "user_id": 388,
+      "history_length": 58,
+      "input_sha256": "e8d9018878e1c48eea676a77b071e1527c64082c1aa22988c731e8d2269b2415"
+    },
+    {
+      "user_index": 388,
+      "user_id": 389,
+      "history_length": 72,
+      "input_sha256": "54c89ee4677dcf1edf14af33aa96ced17076d0e41d4691dcca1085ec89fa3ab6"
+    },
+    {
+      "user_index": 389,
+      "user_id": 390,
+      "history_length": 200,
+      "input_sha256": "da1d757e80986e48fb603de22f3abce12944e8dcf7c29fa5060a049941805625"
+    },
+    {
+      "user_index": 390,
+      "user_id": 391,
+      "history_length": 80,
+      "input_sha256": "24196824b1b0bbffba7b1a3eb198673f24c357e95679d0888277569804f1995a"
+    },
+    {
+      "user_index": 391,
+      "user_id": 392,
+      "history_length": 200,
+      "input_sha256": "c8223019c5f6996deb4b3165c8a9bb164227ba79637bb592c48f5eebfc51af7b"
+    },
+    {
+      "user_index": 392,
+      "user_id": 393,
+      "history_length": 73,
+      "input_sha256": "ab8f2c6c27dd34cebc7f1e334f8ab44e4e98163c59d59707c885a7cdf0f9c328"
+    },
+    {
+      "user_index": 393,
+      "user_id": 394,
+      "history_length": 37,
+      "input_sha256": "9eace143adb932f8e5d7f10d607e77d7aa115e3c1c9f179c6e2e4e0a69594707"
+    },
+    {
+      "user_index": 394,
+      "user_id": 395,
+      "history_length": 22,
+      "input_sha256": "8860adc6683c51af6fb0cc99e004cea76f002203067f1d243928950e832251a9"
+    },
+    {
+      "user_index": 395,
+      "user_id": 396,
+      "history_length": 172,
+      "input_sha256": "a48acd41838e8fbb6b61e0c0f0d425bc841a46af67c8e8ae0d0d30fdfed492e2"
+    },
+    {
+      "user_index": 396,
+      "user_id": 397,
+      "history_length": 33,
+      "input_sha256": "044f6bf41b6047dba4a63d43ddf7f1b04a2a7f40c916979e583262ce60885298"
+    },
+    {
+      "user_index": 397,
+      "user_id": 398,
+      "history_length": 200,
+      "input_sha256": "bd9ef3f1461bdb70c8389504658f522bce4012585d8ef9e4f15070bc8276b8ab"
+    },
+    {
+      "user_index": 398,
+      "user_id": 399,
+      "history_length": 31,
+      "input_sha256": "1806f04ae5cdad805984b22313e5995d8bb42b5514c9b460c91fac856f6c11b8"
+    },
+    {
+      "user_index": 399,
+      "user_id": 400,
+      "history_length": 39,
+      "input_sha256": "09b8447fb2500b31b918c66d2a0c80de7c593d328c105ed9363451b4c025226d"
+    },
+    {
+      "user_index": 400,
+      "user_id": 401,
+      "history_length": 77,
+      "input_sha256": "201d2e37c87237f58ad1776305d6b5efa5a40285089f09f47b6c9b73b0bddd48"
+    },
+    {
+      "user_index": 401,
+      "user_id": 402,
+      "history_length": 200,
+      "input_sha256": "78ca5cdb4dc33ff22a67129254b467299d9f3c5be9fd018d751dec5aeeb4b1e9"
+    },
+    {
+      "user_index": 402,
+      "user_id": 403,
+      "history_length": 200,
+      "input_sha256": "d8d931c1949e6d06e0799744da020e32aff874906ef681ce15160e7421d1eee7"
+    },
+    {
+      "user_index": 403,
+      "user_id": 404,
+      "history_length": 49,
+      "input_sha256": "c810717b21112d963bd353c61e0b97ec5924431e2568c4f2ebbe6646be660bde"
+    },
+    {
+      "user_index": 404,
+      "user_id": 405,
+      "history_length": 48,
+      "input_sha256": "65c0304efea6fff0a14576b19216d74666992e685e9f7296d524f79ba5ecee4d"
+    },
+    {
+      "user_index": 405,
+      "user_id": 406,
+      "history_length": 146,
+      "input_sha256": "7f3a7b9a8323ad64db039539c76cdf842599d02e9ef243bd248d0b1662b61223"
+    },
+    {
+      "user_index": 406,
+      "user_id": 407,
+      "history_length": 31,
+      "input_sha256": "cc595c3b8c3edbb0bb41689a998e1c4013287452204ee96595bf5438dadae225"
+    },
+    {
+      "user_index": 407,
+      "user_id": 408,
+      "history_length": 155,
+      "input_sha256": "5b86b90666229f2cd29c584bf4355c3dd2f9930207a30702b133eaa3357893fd"
+    },
+    {
+      "user_index": 408,
+      "user_id": 409,
+      "history_length": 200,
+      "input_sha256": "aa72d7481e3ba194655da0b0989439380a6e71f20e08c74d0ec9e43cd38d8b51"
+    },
+    {
+      "user_index": 409,
+      "user_id": 410,
+      "history_length": 95,
+      "input_sha256": "0a43973800cedbb55113d1834a47bdc1287514c7998e85f6a57a81fb00a7ec4c"
+    },
+    {
+      "user_index": 410,
+      "user_id": 411,
+      "history_length": 200,
+      "input_sha256": "a76df0248941671bdbd8d6d417baad9345846e14180d50b36665fe257660148f"
+    },
+    {
+      "user_index": 411,
+      "user_id": 412,
+      "history_length": 200,
+      "input_sha256": "a57388d8481ab7491243a6409c3d457768a6f19facd1db22bd380f6fb1689c92"
+    },
+    {
+      "user_index": 412,
+      "user_id": 413,
+      "history_length": 98,
+      "input_sha256": "b5cac26005b3c797b19a8fed69bb5e914bded2565b43cf3a3460f9af21082a04"
+    },
+    {
+      "user_index": 413,
+      "user_id": 414,
+      "history_length": 56,
+      "input_sha256": "c6774a72c73ad3299c815a4353d52f87eb579b19ad4c5c1f32cf259397db606d"
+    },
+    {
+      "user_index": 414,
+      "user_id": 415,
+      "history_length": 200,
+      "input_sha256": "28f1cbad6969efd01262171f07a83a215153bb0620584e94e45987da3565e9e0"
+    },
+    {
+      "user_index": 415,
+      "user_id": 416,
+      "history_length": 61,
+      "input_sha256": "fa32df5706213bb5a7b8f7a4e6ed374980d4d0513eabb9b399d1a8b94abb513f"
+    },
+    {
+      "user_index": 416,
+      "user_id": 417,
+      "history_length": 21,
+      "input_sha256": "33083528ca824b8ace6afd5e1bd7d61a242d8aa078b61d3f5340ae7b4f8c5629"
+    },
+    {
+      "user_index": 417,
+      "user_id": 418,
+      "history_length": 50,
+      "input_sha256": "ee895f3fa48a500135841e386cf9739932ce7e27a7cc54fbcc4a3d48687dfdb7"
+    },
+    {
+      "user_index": 418,
+      "user_id": 419,
+      "history_length": 107,
+      "input_sha256": "509b70f722e37cda6adcae2354cf688a89b06b066a0bc9aa4f5d08a56bac8b3d"
+    },
+    {
+      "user_index": 419,
+      "user_id": 420,
+      "history_length": 63,
+      "input_sha256": "cea80dc553379b6cb053933bb3ac4813cdd9cb3218ebaba1371306b8d11700a3"
+    },
+    {
+      "user_index": 420,
+      "user_id": 421,
+      "history_length": 19,
+      "input_sha256": "f02cf6447a04caa9c366fe5422e9aa84adec1fd37d847a75275456892736325a"
+    },
+    {
+      "user_index": 421,
+      "user_id": 422,
+      "history_length": 46,
+      "input_sha256": "6d6a2cd5b6cccabe2536d31a32a626be2b24114678f237624cbccdd0d57c53ae"
+    },
+    {
+      "user_index": 422,
+      "user_id": 423,
+      "history_length": 63,
+      "input_sha256": "ee89952cb23cc31ea94ba306b6fa810431336abfab0e88922d681269bc4a1cb8"
+    },
+    {
+      "user_index": 423,
+      "user_id": 424,
+      "history_length": 200,
+      "input_sha256": "4f8772aa8f62b0af382c8f8cbb4c6513c48f0ec5ee6ae73af82ffe75e2a52ad8"
+    },
+    {
+      "user_index": 424,
+      "user_id": 425,
+      "history_length": 188,
+      "input_sha256": "c8e2745ea26091a54b7fb2d8b5c98c944769af0d80e344e6eb73d647029390b1"
+    },
+    {
+      "user_index": 425,
+      "user_id": 426,
+      "history_length": 200,
+      "input_sha256": "343d86a23ba9b588e7b72dcb177af3b5d090aae45f9929dea34538a99ac1cc6e"
+    },
+    {
+      "user_index": 426,
+      "user_id": 427,
+      "history_length": 26,
+      "input_sha256": "512cad0f5b7467e48ec5c8addbff575a665a81d77e59399c46de39bbfd245a44"
+    },
+    {
+      "user_index": 427,
+      "user_id": 428,
+      "history_length": 49,
+      "input_sha256": "7a6a0534c415d201edd5fd64f00911d4bbcae1b128d58437eb611709c54be2cb"
+    },
+    {
+      "user_index": 428,
+      "user_id": 429,
+      "history_length": 200,
+      "input_sha256": "55ff60b58072ba65c1e462e80738ca6adc38738b0a7cf8bdeb2b16fde82ce336"
+    },
+    {
+      "user_index": 429,
+      "user_id": 430,
+      "history_length": 62,
+      "input_sha256": "d8380434d4be3866884db4f3c624e8ca975f54d64ab1f8559d669abffa191dbf"
+    },
+    {
+      "user_index": 430,
+      "user_id": 431,
+      "history_length": 83,
+      "input_sha256": "e77f7b8848e5d413fa2d7ed613503c9af7fd8df1faecb1b20555bc0a240eb0fa"
+    },
+    {
+      "user_index": 431,
+      "user_id": 432,
+      "history_length": 72,
+      "input_sha256": "feba05330309435dc4fb1727c3c5b9a739d72beb967b90c06832281c9b2a3e66"
+    },
+    {
+      "user_index": 432,
+      "user_id": 433,
+      "history_length": 45,
+      "input_sha256": "64510c5b2a7afa6e6a8988485bbb32710196247430401e0b27fbc5cd99ad3d9d"
+    },
+    {
+      "user_index": 433,
+      "user_id": 434,
+      "history_length": 42,
+      "input_sha256": "c06d22e706714ba90de20a18aabf7b47314f18bc6a61a7c90b6e1954bdc27d2b"
+    },
+    {
+      "user_index": 434,
+      "user_id": 435,
+      "history_length": 131,
+      "input_sha256": "d591ffa94840e5369e8baf5bb838bf6cd307c5319674e92079b37ee881b4be81"
+    },
+    {
+      "user_index": 435,
+      "user_id": 436,
+      "history_length": 132,
+      "input_sha256": "149fae8b256c5e41a6092227deb87dd85a1c4d36d3b37aacbb1f0e7d28883828"
+    },
+    {
+      "user_index": 436,
+      "user_id": 437,
+      "history_length": 51,
+      "input_sha256": "38781b2f9d87d2c769e60d3a7ac7617862108f4e827718a037e52bff7359c65f"
+    },
+    {
+      "user_index": 437,
+      "user_id": 438,
+      "history_length": 200,
+      "input_sha256": "87cbef2501b51c27c2d5b91385edc18760b83371385d21a0390b46eb6ae89d11"
+    },
+    {
+      "user_index": 438,
+      "user_id": 439,
+      "history_length": 91,
+      "input_sha256": "b3f7c91da6660494a4488dad985203fdd23370ba4193e7f2e7dca444c7e254cd"
+    },
+    {
+      "user_index": 439,
+      "user_id": 440,
+      "history_length": 28,
+      "input_sha256": "6f88edf277a8a9535aa5796a079a51bb3b0ff65003c141743a7d316df58ed5d6"
+    },
+    {
+      "user_index": 440,
+      "user_id": 441,
+      "history_length": 46,
+      "input_sha256": "dcac0bc501523f63a9329840633a4642653cdc6a4ce02f8ebe0c118bcbe8e658"
+    },
+    {
+      "user_index": 441,
+      "user_id": 442,
+      "history_length": 200,
+      "input_sha256": "a3df43f9201aa2231f7c9ef296c73a4217b7192f63534a06c08d1ab839caf7fc"
+    },
+    {
+      "user_index": 442,
+      "user_id": 443,
+      "history_length": 33,
+      "input_sha256": "1e6ac382fd48c52e76297ad22a1ddbe6c2f0e13921b7e85742d5ffe60f5f29e1"
+    },
+    {
+      "user_index": 443,
+      "user_id": 444,
+      "history_length": 119,
+      "input_sha256": "a88677a58979c0d756b2bd12cc6c46145c52bbe99dc4c6861a0a01bffd0e1c1f"
+    },
+    {
+      "user_index": 444,
+      "user_id": 445,
+      "history_length": 200,
+      "input_sha256": "631b0aa0f60d3571928d36a2dda345a3778b85067816b3841eee6ea3c8efaf0b"
+    },
+    {
+      "user_index": 445,
+      "user_id": 446,
+      "history_length": 50,
+      "input_sha256": "f49f1975787e7d3c4409bb3c009bc9fb3ff0378eb8710ad36938079f5d13aa5c"
+    },
+    {
+      "user_index": 446,
+      "user_id": 447,
+      "history_length": 36,
+      "input_sha256": "750927376db1b680c7f4ad3032ed7f636e8c0ef4a81b2ff77d50a1530e1e57d7"
+    },
+    {
+      "user_index": 447,
+      "user_id": 448,
+      "history_length": 22,
+      "input_sha256": "e1c3588bbf260c4ccfdd033e5b5e592f32ed3bb069c80bdb3390be07d490921d"
+    },
+    {
+      "user_index": 448,
+      "user_id": 449,
+      "history_length": 53,
+      "input_sha256": "323f324ffec44facdad2aa85253f245c2d2f062fee9d33ec284615fdab918513"
+    },
+    {
+      "user_index": 449,
+      "user_id": 450,
+      "history_length": 50,
+      "input_sha256": "482291a21dcafba50e155fd8c8f8c782b3d3b6a600a7a801675c23c7b6e829d9"
+    },
+    {
+      "user_index": 450,
+      "user_id": 451,
+      "history_length": 200,
+      "input_sha256": "98d0a14da8ba6ce5dce906cefb423db525f0601bba13afc1021f97cc99db1b6b"
+    },
+    {
+      "user_index": 451,
+      "user_id": 452,
+      "history_length": 131,
+      "input_sha256": "547dea636ff796326beef5786b84098c69438f21a825d35aab59d38510784fe6"
+    },
+    {
+      "user_index": 452,
+      "user_id": 453,
+      "history_length": 200,
+      "input_sha256": "068c5388b91f358febf791a07f5f88f710a2530d086b899e05e2e3b7ac5115e7"
+    },
+    {
+      "user_index": 453,
+      "user_id": 454,
+      "history_length": 200,
+      "input_sha256": "4c3a10b7f8e8be9e1584f3a335f46c60b00e3033060a1315d2499c7eeae8da03"
+    },
+    {
+      "user_index": 454,
+      "user_id": 455,
+      "history_length": 24,
+      "input_sha256": "63a256596a70bce00e354ee531969b4321fb079c9f832ede4132ea537fa0314f"
+    },
+    {
+      "user_index": 455,
+      "user_id": 456,
+      "history_length": 156,
+      "input_sha256": "9cd9770d44ce75fd2973f49b64736165b09ea51d2f23132766eb4d79ac4cfb94"
+    },
+    {
+      "user_index": 456,
+      "user_id": 457,
+      "history_length": 200,
+      "input_sha256": "a1439215568c73448d3c27619c1afc8a73d90e6e6e4c2e49f71fd84398836e9d"
+    },
+    {
+      "user_index": 457,
+      "user_id": 458,
+      "history_length": 42,
+      "input_sha256": "b1cce3dde67aeec5783ba72dee93cd3330ca96789634c706e8690ce557101915"
+    },
+    {
+      "user_index": 458,
+      "user_id": 459,
+      "history_length": 31,
+      "input_sha256": "afd4c0795c8635daa857e47973b863551712556b85a6c3f04e3f236bc85ac9d8"
+    },
+    {
+      "user_index": 459,
+      "user_id": 460,
+      "history_length": 46,
+      "input_sha256": "f97e94773cfe37de435d99485853f6e40745568d82f4ca57fb43cf9203fbb4d8"
+    },
+    {
+      "user_index": 460,
+      "user_id": 461,
+      "history_length": 200,
+      "input_sha256": "5cf9989cdb1e6b272ab2de483afa75a4cf20308b74fa86e9c438c44ba6d5fcf4"
+    },
+    {
+      "user_index": 461,
+      "user_id": 462,
+      "history_length": 176,
+      "input_sha256": "dadb5d6d29455c43d9dc9d6f1a31afe6af00c2c465e9a90783769e7b52482f96"
+    },
+    {
+      "user_index": 462,
+      "user_id": 463,
+      "history_length": 122,
+      "input_sha256": "326f9bb1623e07b48a09e29a47ddc41fb3a1aaccf2d3bb019adc6f8daa8d6380"
+    },
+    {
+      "user_index": 463,
+      "user_id": 464,
+      "history_length": 81,
+      "input_sha256": "380ec5230859f56bdca5491dad114e5b6cb473fec1e9dc4e46b9456fde3db2fe"
+    },
+    {
+      "user_index": 464,
+      "user_id": 465,
+      "history_length": 36,
+      "input_sha256": "ab5935fd83dd613593b066ac5c31ca57050c1da6ed69b0a02afc47f75c553de0"
+    },
+    {
+      "user_index": 465,
+      "user_id": 466,
+      "history_length": 198,
+      "input_sha256": "9f80690cacf4a53fb7e6212688aa43a80bceba675b42431bc45d1486dec72790"
+    },
+    {
+      "user_index": 466,
+      "user_id": 467,
+      "history_length": 68,
+      "input_sha256": "e42e1529240131c5318b6ade63ef940de51d1a925b00844229e2b088ee2dc04c"
+    },
+    {
+      "user_index": 467,
+      "user_id": 468,
+      "history_length": 25,
+      "input_sha256": "fb93f9977e0e849dd36a39ddcdd5e6dd177732676e932cd466885974cf51621e"
+    },
+    {
+      "user_index": 468,
+      "user_id": 469,
+      "history_length": 48,
+      "input_sha256": "c5c09476012691d0c30a896dcf1c55a8ffd76b31309f9a309a4a1beeba083066"
+    },
+    {
+      "user_index": 469,
+      "user_id": 470,
+      "history_length": 67,
+      "input_sha256": "d92821e3a19d42ba72bf8051af615cba8b59a5ffa033a0811ab24ef24f807dad"
+    },
+    {
+      "user_index": 470,
+      "user_id": 471,
+      "history_length": 104,
+      "input_sha256": "8d54652a856f9ee6815f0ca38de3647c2797e651a11e038a5b04624b5df0a55f"
+    },
+    {
+      "user_index": 471,
+      "user_id": 472,
+      "history_length": 44,
+      "input_sha256": "4c757de27c5c73b961c37b15361b50de6e16648fdbe5f77c29d4e21d4ee6f0cd"
+    },
+    {
+      "user_index": 472,
+      "user_id": 473,
+      "history_length": 48,
+      "input_sha256": "0ef440d114ddb700ba0cb5698996f6e51877f2c8943f0714feae9437cc579ecd"
+    },
+    {
+      "user_index": 473,
+      "user_id": 474,
+      "history_length": 200,
+      "input_sha256": "eba1d113e3346f5ac9e18ffde571fedd8aa80a3a74092f2ba57000f963e008eb"
+    },
+    {
+      "user_index": 474,
+      "user_id": 475,
+      "history_length": 200,
+      "input_sha256": "e1bfe9e3b41e79a2418c050b25f73e72808ef456871407f8b7b59108b7eac122"
+    },
+    {
+      "user_index": 475,
+      "user_id": 476,
+      "history_length": 200,
+      "input_sha256": "cbb77d501eb476a13c46ba263d39e5cab5031be99d831a98aaabd59ebb038fe3"
+    },
+    {
+      "user_index": 476,
+      "user_id": 477,
+      "history_length": 200,
+      "input_sha256": "083e36e50b2cfab1513db873cbfe34d2147c6985863476e0f4ebf2d1c3862cc8"
+    },
+    {
+      "user_index": 477,
+      "user_id": 478,
+      "history_length": 45,
+      "input_sha256": "a6e6846b5cccd792ca920c08658c9f7cd87d36a87797c0c50697ee250e72d705"
+    },
+    {
+      "user_index": 478,
+      "user_id": 479,
+      "history_length": 92,
+      "input_sha256": "432aa601e0378a346b7d7ad7f87bbec48cbddef6a029f81c0af111fb3bc6be61"
+    },
+    {
+      "user_index": 479,
+      "user_id": 480,
+      "history_length": 106,
+      "input_sha256": "d3bfea2fb44042d1a43fa985ceeb6190f422f46fb1f7e8e4e8c8c52f05ddc95a"
+    },
+    {
+      "user_index": 480,
+      "user_id": 481,
+      "history_length": 197,
+      "input_sha256": "2b686e9f9ceb701941178e9af9c146b4420dfdf6aeb409e69010ba71ef434205"
+    },
+    {
+      "user_index": 481,
+      "user_id": 482,
+      "history_length": 200,
+      "input_sha256": "881cffa2ecaa90efac4c1acf0b2ef3dbdb9eaa0f875c9c9d311f68a622fe78bd"
+    },
+    {
+      "user_index": 482,
+      "user_id": 483,
+      "history_length": 28,
+      "input_sha256": "8dc4951d1e9adb16e68b2bbdb7d261bd7354264fa23ec183c8ac56f0d56aa396"
+    },
+    {
+      "user_index": 483,
+      "user_id": 484,
+      "history_length": 33,
+      "input_sha256": "052767979a16642c3435ab4dffa550087c14d3f7376a165de2fb80cfe79901b5"
+    },
+    {
+      "user_index": 484,
+      "user_id": 485,
+      "history_length": 44,
+      "input_sha256": "053ff29de93e1d28e6b256f10d382817c8ec536702fcd59c0372b51747a29485"
+    },
+    {
+      "user_index": 485,
+      "user_id": 486,
+      "history_length": 38,
+      "input_sha256": "77f6c70637cd84c7bf535f3c6cb86aab0b4f7302eb032930d9e03adc6f8893b7"
+    },
+    {
+      "user_index": 486,
+      "user_id": 487,
+      "history_length": 49,
+      "input_sha256": "4621c4521fdf2c7b9de4070f1bea29a8dd8600d73a128435e8072b20900d5d99"
+    },
+    {
+      "user_index": 487,
+      "user_id": 488,
+      "history_length": 24,
+      "input_sha256": "4063947c35d4037234bc2f88ce37c4ef6c235a7c130ec08b4b11956767aeef28"
+    },
+    {
+      "user_index": 488,
+      "user_id": 489,
+      "history_length": 23,
+      "input_sha256": "09a2f1133dc0e3ff4a92273cd477518cc580935e2184c5bb50df061db9eadc8e"
+    },
+    {
+      "user_index": 489,
+      "user_id": 490,
+      "history_length": 76,
+      "input_sha256": "10ee9f2df2b3ce3b05a69d518285dcdf87a50822e54f13aa69ba9b18ce53b10b"
+    },
+    {
+      "user_index": 490,
+      "user_id": 491,
+      "history_length": 24,
+      "input_sha256": "ce439fa6d991887289c478e764259c4cb9c10716c100467dd69a3f4e3cd3af0a"
+    },
+    {
+      "user_index": 491,
+      "user_id": 492,
+      "history_length": 31,
+      "input_sha256": "d40e8bf0aa33fde1811e579a79ef527ea3d9c13b94cd7f227ac4fa99e7e3355e"
+    },
+    {
+      "user_index": 492,
+      "user_id": 493,
+      "history_length": 157,
+      "input_sha256": "4b62614fa24c6397e3ed1fa75df905b74ea86cbe6d74b1863458d60011efb645"
+    },
+    {
+      "user_index": 493,
+      "user_id": 494,
+      "history_length": 190,
+      "input_sha256": "8f5cd5bcac1ba0e15dfd313f67807b822e09f631880805b166ad4d543b17587f"
+    },
+    {
+      "user_index": 494,
+      "user_id": 495,
+      "history_length": 43,
+      "input_sha256": "0612441f2782c9bff3089f69b82e106d318f06b3016033b50cb4ca506e48a1b4"
+    },
+    {
+      "user_index": 495,
+      "user_id": 496,
+      "history_length": 118,
+      "input_sha256": "74f2169e1b0a531ba9ebbb1fec73c4540698bad6977d0706f5986d65d8a27a78"
+    },
+    {
+      "user_index": 496,
+      "user_id": 497,
+      "history_length": 23,
+      "input_sha256": "1dbd39be06b5e7c96e59c52dee3289d37de44c9e61fb5a6c6c22696a3f2abf2e"
+    },
+    {
+      "user_index": 497,
+      "user_id": 498,
+      "history_length": 171,
+      "input_sha256": "858a41fbb9ece06d062c83c1cbd969ed947e68f087c38d9edbb1afce4142851f"
+    },
+    {
+      "user_index": 498,
+      "user_id": 499,
+      "history_length": 198,
+      "input_sha256": "90cd6fdbddc2a41c65433d824c9b51ca39ca3612796af476112a7457520083b7"
+    },
+    {
+      "user_index": 499,
+      "user_id": 500,
+      "history_length": 100,
+      "input_sha256": "251788c4e27639967cf227dda7b3939b2f5f84eb1a1bcf36643ff9ee4d83500a"
+    }
+  ],
+  "candidate_ids_sha256": "637594e0df42f2046ed5cf4eee9add6145e9a35c9e7ea5df5f56cb95ffdf4db8",
+  "input_files_sha256": {
+    "tmp/ml-1m/sasrec_format.csv": "172eb42e9aa96dd51af124b5443f50bf75c6472de19bf55a9664ffce26067734",
+    "tmp/processed/ml-1m/movies.csv": "b3e0fb4562ea89c213d1c819f1d97e612d25bd54fb4abab201e6ff73d6b8415d"
+  },
+  "source_files_sha256": {
+    "src/generative_recommenders_pl/scripts/run_robustness.py": "fd3824d9bc4b1e49868ff17c8780c1a7048588989e5eaf28c72ccf8b4632c7c3",
+    "src/generative_recommenders_pl/scripts/controlled_robustness.py": "d93783e83178b9eaea56205ee12cec45fe37da8b4bf8f3a1ef9964ebbf3c0158",
+    "src/generative_recommenders_pl/scripts/run_controlled_robustness.py": "861c695ef67d5cdc50d57232f0d7cabf867faaa4547c0f8a4fcf6f78683527bd",
+    "src/generative_recommenders_pl/scripts/audit_robustness.py": "aa398a23428ae843aa0def5076204c8956c8b4fd0a47ff4add3060871b203f9a",
+    "src/generative_recommenders_pl/models/utils/inference.py": "762ddda7404fad7652ffc57fad28ade8bc57762ca62424675b0e69b689066098",
+    "src/generative_recommenders_pl/models/utils/features.py": "818d3d4db3b19d9390a32e195672f0ef587567f7cc4713d7563532b3ddc5277e",
+    "src/generative_recommenders_pl/models/sequential_encoders/hstu.py": "5fec226e3d934bdf54f6dc1c0cdb41f291005eda4e75fb1c89a8b20340c1e042"
+  },
+  "resolved_config": {
+    "task_name": "eval",
+    "tags": [
+      "dev"
+    ],
+    "ckpt_path": "logs/train/runs/baseline/checkpoints/epoch_097.ckpt",
+    "output_file": "???",
+    "data": {
+      "_target_": "generative_recommenders_pl.data.reco_dataset.RecoDataModule",
+      "dataset_name": "ml-1m",
+      "batch_size": 16,
+      "max_sequence_length": 200,
+      "chronological": true,
+      "positional_sampling_ratio": 1.0,
+      "data_preprocessor": {
+        "_target_": "generative_recommenders_pl.data.preprocessor.MovielensDataProcessor",
+        "download_path": "http://files.grouplens.org/datasets/movielens/ml-1m.zip",
+        "saved_name": "tmp/movielens1m.zip",
+        "prefix": "ml-1m",
+        "convert_timestamp": false,
+        "expected_num_unique_items": 3706,
+        "expected_max_item_id": 3952
+      },
+      "train_dataset": {
+        "_target_": "generative_recommenders_pl.data.reco_dataset.RecoDataset",
+        "ignore_last_n": 1
+      },
+      "val_dataset": {
+        "_target_": "generative_recommenders_pl.data.reco_dataset.RecoDataset",
+        "ignore_last_n": 0
+      },
+      "test_dataset": {
+        "_target_": "generative_recommenders_pl.data.reco_dataset.RecoDataset",
+        "ignore_last_n": 0
+      }
+    },
+    "model": {
+      "_target_": "generative_recommenders_pl.models.retrieval.Retrieval",
+      "optimizer": {
+        "_target_": "torch.optim.SGD",
+        "_partial_": true
+      },
+      "scheduler": {
+        "_target_": "torch.optim.lr_scheduler.ConstantLR",
+        "_partial_": true
+      },
+      "configure_optimizer_params": {
+        "monitor": "val/hr@100",
+        "interval": "epoch",
+        "frequency": 1
+      },
+      "gr_output_length": 10,
+      "item_embedding_dim": 50,
+      "embeddings": {
+        "_target_": "generative_recommenders_pl.models.embeddings.embeddings.LocalEmbeddingModule",
+        "num_items": 3952,
+        "item_embedding_dim": 50
+      },
+      "preprocessor": {
+        "_target_": "generative_recommenders_pl.models.preprocessors.LearnablePositionalEmbeddingInputFeaturesPreprocessor",
+        "max_sequence_len": 211,
+        "embedding_dim": 50,
+        "dropout_rate": 0.2
+      },
+      "sequence_encoder": {
+        "_target_": "generative_recommenders_pl.models.sequential_encoders.hstu.HSTU",
+        "max_sequence_len": 200,
+        "max_output_len": 11,
+        "embedding_dim": 50,
+        "item_embedding_dim": 50,
+        "num_blocks": 2,
+        "num_heads": 1,
+        "attention_dim": 50,
+        "linear_dim": 50,
+        "linear_dropout_rate": 0.2,
+        "attn_dropout_rate": 0.0,
+        "normalization": "rel_bias",
+        "linear_config": "uvqk",
+        "linear_activation": "silu",
+        "concat_ua": false,
+        "enable_relative_attention_bias": true
+      },
+      "postprocessor": {
+        "_target_": "generative_recommenders_pl.models.postprocessors.postprocessors.L2NormEmbeddingPostprocessor",
+        "embedding_dim": 50,
+        "eps": 1e-06
+      },
+      "similarity": {
+        "_target_": "generative_recommenders_pl.models.similarity.dot_product.DotProductSimilarity"
+      },
+      "negatives_sampler": {
+        "_target_": "generative_recommenders_pl.models.negatives_samples.negative_sampler.LocalNegativesSampler",
+        "l2_norm": true,
+        "l2_norm_eps": 1e-06
+      },
+      "candidate_index": {
+        "_target_": "generative_recommenders_pl.models.indexing.candidate_index.CandidateIndex",
+        "k": 200,
+        "top_k_module": {
+          "_target_": "generative_recommenders_pl.models.indexing.top_k.MIPSBruteForceTopK"
+        }
+      },
+      "loss": {
+        "_target_": "generative_recommenders_pl.models.losses.autoregressive_losses.SampledSoftmaxLoss",
+        "num_to_sample": 128,
+        "softmax_temperature": 0.05
+      },
+      "metrics": {
+        "_target_": "generative_recommenders_pl.models.metrics.retrieval.RetrievalMetrics",
+        "k": 200,
+        "at_k_list": [
+          10,
+          50,
+          100,
+          200
+        ]
+      },
+      "compile_model": false
+    },
+    "callbacks": {
+      "model_checkpoint": {
+        "_target_": "lightning.pytorch.callbacks.ModelCheckpoint",
+        "dirpath": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU\\outputs\\robustness\\stage2\\controlled_hydra/checkpoints",
+        "filename": "epoch_{epoch:03d}",
+        "monitor": "val/hr@100",
+        "verbose": false,
+        "save_last": true,
+        "save_top_k": 1,
+        "mode": "max",
+        "auto_insert_metric_name": false,
+        "save_weights_only": false,
+        "every_n_train_steps": null,
+        "train_time_interval": null,
+        "every_n_epochs": null,
+        "save_on_train_epoch_end": null
+      },
+      "early_stopping": {
+        "_target_": "lightning.pytorch.callbacks.EarlyStopping",
+        "monitor": "val/hr@100",
+        "min_delta": 0.0,
+        "patience": 10,
+        "verbose": false,
+        "mode": "max",
+        "strict": true,
+        "check_finite": true,
+        "stopping_threshold": null,
+        "divergence_threshold": null,
+        "check_on_train_epoch_end": null
+      },
+      "model_summary": {
+        "_target_": "lightning.pytorch.callbacks.RichModelSummary",
+        "max_depth": -1
+      },
+      "rich_progress_bar": {
+        "_target_": "lightning.pytorch.callbacks.RichProgressBar"
+      },
+      "learning_rate_monitor": {
+        "_target_": "lightning.pytorch.callbacks.LearningRateMonitor",
+        "logging_interval": "step"
+      }
+    },
+    "logger": {
+      "csv": {
+        "_target_": "lightning.pytorch.loggers.csv_logs.CSVLogger",
+        "save_dir": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU\\outputs\\robustness\\stage2\\controlled_hydra",
+        "name": "csv/",
+        "prefix": ""
+      },
+      "tensorboard": {
+        "_target_": "lightning.pytorch.loggers.tensorboard.TensorBoardLogger",
+        "save_dir": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU\\outputs\\robustness\\stage2\\controlled_hydra/tensorboard/",
+        "name": null,
+        "log_graph": false,
+        "default_hp_metric": true,
+        "prefix": ""
+      }
+    },
+    "trainer": {
+      "_target_": "lightning.pytorch.trainer.Trainer",
+      "default_root_dir": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU\\outputs\\robustness\\stage2\\controlled_hydra",
+      "min_epochs": 1,
+      "max_epochs": 10,
+      "accelerator": "cpu",
+      "devices": 1,
+      "check_val_every_n_epoch": 1,
+      "deterministic": false,
+      "limit_train_batches": 1.0,
+      "limit_val_batches": 1.0
+    },
+    "paths": {
+      "root_dir": ".",
+      "log_dir": "./logs/",
+      "output_dir": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU\\outputs\\robustness\\stage2\\controlled_hydra",
+      "work_dir": "C:\\Users\\dimap\\.codex\\worktrees\\995a\\GenRec_HSTU"
+    },
+    "extras": {
+      "ignore_warnings": false,
+      "enforce_tags": true,
+      "print_config": true
+    },
+    "device": "cuda"
+  },
+  "elapsed_seconds": 644.1964890999989,
+  "rows": 164928,
+  "mask_only_rows": 41232,
+  "results_sha256": "0e33fa464ab08dd050c169f9148ac368103857d0d03d3fb659da2b810db59f1f",
+  "mask_only_results_sha256": "ff2e7b92a9eed4d4e7c94041ec25ac837e52d3dfdf1540aa6c52b25fcc5c888a"
+}

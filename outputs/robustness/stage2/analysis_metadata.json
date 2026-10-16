@@ -1,0 +1,12 @@
+{
+  "bootstrap_repeats": 5000,
+  "bootstrap_seed": 42,
+  "analysis_source_sha256": "c484390a2ad2a0cc200eca6b8bb96d88392d0b6686eda4d1218dc4a41f70ec47",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.2.3",
+  "method": "pointwise 95% percentile bootstrap over users after within-user averaging",
+  "paired_difference_direction": "dynamic minus fixed_original",
+  "timestamp_primary_means_include_clipped_and_noop_cases": true,
+  "timestamp_changed_buckets_tables": "conditional diagnostic; n_users varies",
+  "interpretation": "conditional on fixed checkpoint, selected users and sampled replacements; first 500 users are not a random population sample"
+}

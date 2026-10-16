@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "users_checked": 13,
+  "batch_vs_single_max_abs_logit_error": 1.7881393432617188e-07,
+  "embedding_vs_id_max_abs_logit_error": 0.0,
+  "independent_reconstruction": "passed",
+  "updated_lengths_and_last_real_state": "passed",
+  "causal_attention_mask": "passed",
+  "prediction_timestamp_anchor": "passed",
+  "padding_timestamp_invariance": "passed",
+  "empty_history_rejected": "passed",
+  "embedding_autograd_graph": "passed; no derivatives computed"
+}

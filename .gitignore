@@ -168,4 +168,3 @@ ckpts
 .idea
 tools
 output
-/src/generative_recommenders_pl/scripts/generate_note_pdf.py
