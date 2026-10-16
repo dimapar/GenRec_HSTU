@@ -385,8 +385,8 @@ python src/generative_recommenders_pl/scripts/refresh_stage2_plots.py
 | Последние десять позиций: графики и интервалы | `plots/tail_sensitivity/tail_sensitivity_plots.html`                         |
 | Средние и интервалы для трёх изменений последних позиций | `plots/tail_sensitivity/tail_impact_summary.csv`                             |
 | Парное сравнение последней и предпоследней позиций | `plots/tail_sensitivity/last_minus_penultimate.csv`                          |
-| Основная редактируемая записка | `controlled_note.md`                                                         |
-| PDF-версия основной записки | `controlled_note.pdf`                                                        |
+| Техническая записка | `controlled_note.md`                                                         |
+| PDF-версия технической записки | `controlled_note.pdf`                                                        |
 
 ### Вызов модели через готовые embeddings
 
@@ -415,23 +415,3 @@ python -m pytest -q
 ```
 
 В текущем окружении прошли все 34 теста. Проверяются независимая реконструкция после удаления, обновлённые длины и временная служебная позиция, padding, пустая история, прежние seeds и заменяющие фильмы, ограничение времени, временные интервалы, влияние одной маски, равенство двух интерфейсов и расчёт интервалов по пользователям вместо отдельных строк замен.
-
-### Редактирование и сборка записки второго этапа
-
-Источник основной записки - `outputs/robustness/stage2/controlled_note.md`. Она содержит общие условия и описание обработки возмущений, сравнение масок, влияние временных меток, последние десять позиций с таблицами доверительных интервалов и выводы. `write_controlled_note.py` читает Markdown и создаёт `controlled_note_draft.pdf`, сохраняя исходный текст.
-
-Файл `controlled_note.pdf`, если он присутствует, содержит прежнюю версию и этим сборщиком по умолчанию не обновляется. Актуальная версия для просмотра и отправки - `controlled_note_draft.pdf`. Старые варианты также сохранены в `archive/controlled_note_initial.md`, `archive/controlled_note_initial.pdf` и `archive/timestamps_section_six_shifts.*`.
-
-Файлы `timestamps_section.md` и `tail_sensitivity_section.md` использовались как отдельные черновики для совместного редактирования разделов; изменения в них не переносятся в основную записку автоматически.
-
-Изображение задаётся отдельной строкой Markdown, например:
-
-```markdown
-![Top-10 overlap: сравнение масок](plots/masking/comparison_legacy_topk_overlap.png)
-```
-
-Для явного разрыва страницы используется `<!-- pagebreak -->`. Для другого исходного файла или имени PDF доступны параметры `--input` и `--output`:
-
-```powershell
-python src/generative_recommenders_pl/scripts/write_controlled_note.py --input outputs/robustness/stage2/controlled_note.md --output outputs/robustness/stage2/controlled_note_draft.pdf
-```
